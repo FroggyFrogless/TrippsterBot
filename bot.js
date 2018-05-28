@@ -5,6 +5,9 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+Client = discord.Client() #Initialise Client 
+client = commands.Bot(command_prefix = "tg!") #Initialise client bot
+
 client.on('message', message => {
     if (message.content === 'ping') {
     	message.channel.send('PONG!');

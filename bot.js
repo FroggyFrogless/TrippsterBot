@@ -11,9 +11,6 @@ client.on('message', msg => {
   }
 });
 
-// THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
-
 class Role {
   constructor(guild, data) {
     /**
@@ -372,3 +369,6 @@ Role.prototype.hasPermissions = util
     'Role#hasPermissions is deprecated - use Role#hasPermission instead, it now takes an array');
 
 module.exports = Role;
+
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);

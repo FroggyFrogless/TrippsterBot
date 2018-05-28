@@ -12,35 +12,6 @@ client.on('message', msg => {
 });
 
 client.on('message', message => {
-    // If the message is '!rip'
-    if (message.content === 'rip') {
-        // Create the attachment using MessageAttachment
-        const attachment = new MessageAttachment('https://i.imgur.com/w3duR07.png');
-        // Send the attachment in the message channel
-        message.channel.send(attachment);
-    }
-});
-
-client.on('message', message => {
-    // If the message is '!memes'
-    if (message.content === '!memes') {
-        // Get the buffer from the 'memes.txt', assuming that the file exists
-        const buffer = fs.readFileSync('./memes.txt');
-
-        /**
-         * Create the attachment using MessageAttachment,
-         * overwritting the default file name to 'memes.txt'
-         * Read more about it over at
-         * http://discord.js.org/#/docs/main/master/class/MessageAttachment
-         */
-        const attachment = new MessageAttachment(buffer, 'memes.txt');
-        // Send the attachment in the message channel with a content
-        message.channel.send(`${message.author}, here are your memes!`, attachment);
-    }
-});
-
-
-client.on('message', message => {
   // Ignore messages that aren't from a guild
   if (!message.guild) return;
 

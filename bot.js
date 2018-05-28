@@ -18,6 +18,18 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
+  if (msg.content === 'oof') {
+    msg.reply('OOF');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'OOF') {
+    msg.reply('OOF');
+  }
+});
+
+client.on('message', msg => {
   if (msg.content === 'L') {
     msg.reply('L');
   }

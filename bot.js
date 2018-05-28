@@ -11,6 +11,24 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === 'rip') {
+    msg.reply('Take the L');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'L') {
+    msg.reply('L');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'l') {
+    msg.reply('L');
+  }
+});
+
 client.on('message', message => {
   // Ignore messages that aren't from a guild
   if (!message.guild) return;

@@ -41,6 +41,18 @@ client.on('message', msg => {
   }
 });
 
+client.on('message', msg => {
+  if (msg.content === 'f') {
+    msg.reply('F');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'F') {
+    msg.reply('F');
+  }
+});
+
 client.on('message', message => {
   // Ignore messages that aren't from a guild
   if (!message.guild) return;

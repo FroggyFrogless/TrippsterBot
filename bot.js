@@ -6,18 +6,6 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'I am a Bot I am a Bot') {
-    msg.reply('Bot Confirm');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('pong');
-  }
-});
-
-client.on('message', msg => {
   if (msg.content === 'rip') {
     msg.reply('Take the L');
   }

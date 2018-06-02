@@ -13,13 +13,13 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'DAB') {
-    msg.reply(' :discorddab: ');
+    msg.reply(' https://pbs.twimg.com/media/Cr35HedWcAAHIx6.png ');
   }
 });
 
 client.on('message', msg => {
   if (msg.content === 'dab') {
-    msg.reply(' :discorddab: ');
+    msg.reply(' https://pbs.twimg.com/media/Cr35HedWcAAHIx6.png ');
   }
 });
 

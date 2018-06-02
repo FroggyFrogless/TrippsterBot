@@ -12,6 +12,22 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
+  if (msg.content === '~~sponsor') {
+    msg.reply('Wanna support Tripp!?! Well for just **$5** you can do that! Get partied EVERY STREAM, friended by Trippster, invited to the guild, AND THE **SICK YOUTUBE SPONSOR ROLE!** Click the link to sponsor now!
+
+https://gaming.youtube.com/c/Trippster?action=sponsor');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === '~~sponser') {
+    msg.reply('Wanna support Tripp!?! Well for just **$5** you can do that! Get partied EVERY STREAM, friended by Trippster, invited to the guild, AND THE **SICK YOUTUBE SPONSOR ROLE!** Click the link to sponsor now!
+
+https://gaming.youtube.com/c/Trippster?action=sponsor');
+  }
+});
+
+client.on('message', msg => {
   if (msg.content === 'oof') {
     msg.reply('OOF');
   }

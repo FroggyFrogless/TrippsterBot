@@ -13,13 +13,13 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'DAB') {
-    msg.reply(' https://pbs.twimg.com/media/Cr35HedWcAAHIx6.png ');
+    msg.reply(' https://image.spreadshirtmedia.com/image-server/v1/mp/designs/1010794543,width=178,height=178/dab-dabbing-emoticon-black-emojii-football-touchdo.png ');
   }
 });
 
 client.on('message', msg => {
   if (msg.content === 'dab') {
-    msg.reply(' https://pbs.twimg.com/media/Cr35HedWcAAHIx6.png ');
+    msg.reply(' https://image.spreadshirtmedia.com/image-server/v1/mp/designs/1010794543,width=178,height=178/dab-dabbing-emoticon-black-emojii-football-touchdo.png ');
   }
 });
 

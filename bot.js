@@ -12,18 +12,6 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
-  if (msg.content === 'DAB') {
-    msg.reply(' https://pbs.twimg.com/media/Cr35HedWcAAHIx6.png ');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'dab') {
-    msg.reply(' https://pbs.twimg.com/media/Cr35HedWcAAHIx6.png ');
-  }
-});
-
-client.on('message', msg => {
   if (msg.content === 'oof') {
     msg.reply('OOF');
   }

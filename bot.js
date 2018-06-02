@@ -7,11 +7,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content === 'I am a Bot I am a Bot') {
-    msg.reply('Did you know?!?!? TRIPPSTER HAS A MINECRAFT SERVER!!! Join it now!!! 
-ip: tgpvp.com
-version: 1.8.9
-type: ALL AROUND!!!
-Dedicated Discord link: https://discord.gg/quYKTrk');
+    msg.reply('Bot Confirm');
   }
 });
 

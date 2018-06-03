@@ -5,6 +5,32 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
+     * The ID of the webhook
+     * @type {Snowflake}
+     */
+    this.id = data.id;
+
+     * The token for the webhook
+     * @type {string}
+     */
+    this.token = data.token;
+
+   * Checks if this collection shares identical key-value pairings with another.
+   * This is different to checking for equality using equal-signs, because
+   * the collections may be different objects, but contain the same data.
+   * @param {Collection} collection Collection to compare with
+   * @returns {boolean} Whether the collections have identical contents
+   */
+  equals(collection) {
+    if (!collection) return false;
+    if (this === collection) return true;
+    if (this.size !== collection.size) return false;
+    return !this.find((value, key) => {
+      const testVal = collection.get(key);
+      return testVal !== value || (testVal === undefined && !collection.has(key));
+    });
+  }
+
 client.on('message', msg => {
   if (msg.content === 'rip') {
     msg.reply('Take the L');

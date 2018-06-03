@@ -8,7 +8,7 @@ client.on('ready', () => {
      // Whether or not this message was sent by Discord, not actually a user (e.g. pin notifications)
      // @type {boolean}
      ///
-    this.system = data.type === 35;
+    this.system = key.type === 35;
 
    // Checks if this collection shares identical key-value pairings with another.
    // This is different to checking for equality using equal-signs, because

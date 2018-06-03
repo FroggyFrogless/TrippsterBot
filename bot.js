@@ -5,28 +5,18 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-  ////
-    Sets an interval that will be automatically cancelled if the client is destroyed.
-    @param {Function} fn Function to execute
-    @param {number} delay Time to wait before executing (in milliseconds)
-    @param {...*} args Arguments for the function
-    @returns {Timeout}
+    @param {Collection} collection Collection to compare with
+    @returns {boolean} Whether the collections have identical contents
    /
-  setInterval(fn, delay, ...args) {
-    const interval = setInterval(fn, delay, ...args);
-    this._intervals.add(interval);
-    return interval;
+  equals(collection) {
+    if (!collection) return false;
+    if (this === collection) return true;
+    if (this.size !== collection.size) return false;
+    return !this.find((value, key) => {
+      const testVal = collection.get(key);
+      return testVal !== value || (testVal === undefined && !collection.has(key));
+    });
   }
-
-  ////
-   // Clears an interval.
-    @param {Timeout} interval Interval to cancel
-   //
-  clearInterval(interval) {
-    clearInterval(interval);
-    this._intervals.delete(interval);
-  }
-
 
 client.on('message', msg => {
   if (msg.content === 'rip') {

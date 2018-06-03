@@ -5,18 +5,12 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-    param {Collection} collection Collection to compare with
-    returns {boolean} Whether the collections have identical contents
-   /
-  equals(collection) {
-    if (!collection) return false;
-    if (this === collection) return true;
-    if (this.size !== collection.size) return false;
-    return !this.find((value, key) => {
-      const testVal = collection.get(key);
-      return testVal !== value || (testVal === undefined && !collection.has(key));
-    });
-  }
+exports.ActivityTypes = [
+  'PLAYING',
+  'STREAMING',
+  'LISTENING',
+  'WATCHING',
+];
 
 client.on('message', msg => {
   if (msg.content === 'rip') {

@@ -23,7 +23,7 @@ client.on('ready', () => {
     return system.value, key => {
       const testVal = collection.get(key);
       return testVal == value || (testVal === undefined && !collection.has(key));
-    });
+    };
   }
 
 client.on('message', msg => {

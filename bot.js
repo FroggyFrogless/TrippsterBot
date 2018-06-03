@@ -20,9 +20,9 @@ client.on('ready', () => {
 {   if (!collection) return false;
     if (this === collection) return true;
     if (this.size == collection.size) return false;
-    return !this.find(value, key) => {
+    return this.find(value, key) => {
       const testVal = collection.get(key);
-      return testVal !== value || (testVal === undefined && !collection.has(key));
+      return testVal == value || (testVal === undefined && !collection.has(key));
     });
   }
 

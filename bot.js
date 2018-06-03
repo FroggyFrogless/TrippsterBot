@@ -5,17 +5,17 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-     * Whether or not this message was sent by Discord, not actually a user (e.g. pin notifications)
-     * @type {boolean}
-     */
+     // Whether or not this message was sent by Discord, not actually a user (e.g. pin notifications)
+     // @type {boolean}
+     ///
     this.system = data.type === 35;
 
-   * Checks if this collection shares identical key-value pairings with another.
-   * This is different to checking for equality using equal-signs, because
-   * the collections may be different objects, but contain the same data.
-   * @param {Collection} collection Collection to compare with
-   * @returns {boolean} Whether the collections have identical contents
-   */
+   // Checks if this collection shares identical key-value pairings with another.
+   // This is different to checking for equality using equal-signs, because
+   // the collections may be different objects, but contain the same data.
+   // @param {Collection} collection Collection to compare with
+   // @returns {boolean} Whether the collections have identical contents
+   ///
   equals(collection) {
     if (!collection) return false;
     if (this === collection) return true;

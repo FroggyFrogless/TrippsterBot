@@ -5,16 +5,6 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-     * The ID of the webhook
-     * @type {Snowflake}
-     */
-    this.id = data.id;
-
-     * The token for the webhook
-     * @type {string}
-     */
-    this.token = data.token;
-
      * Whether or not this message was sent by Discord, not actually a user (e.g. pin notifications)
      * @type {boolean}
      */

@@ -5,8 +5,8 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-    @param {Collection} collection Collection to compare with
-    @returns {boolean} Whether the collections have identical contents
+    param {Collection} collection Collection to compare with
+    returns {boolean} Whether the collections have identical contents
    /
   equals(collection) {
     if (!collection) return false;

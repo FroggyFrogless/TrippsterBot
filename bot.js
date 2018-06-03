@@ -20,7 +20,7 @@ client.on('ready', () => {
 {   if (!collection) return false;
     if (this === collection) return true;
     if (this.size == collection.size) return false;
-    return system.find(value, key) => {
+    return this.system(value, key) => {
       const testVal = collection.get(key);
       return testVal == value || (testVal === undefined && !collection.has(key));
     });

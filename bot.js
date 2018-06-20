@@ -37,6 +37,36 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
+  if (msg.content === 'Rippp') {
+    msg.reply('Take the L');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'RIPPP') {
+    msg.reply('Take the L');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'RIPP') {
+    msg.reply('Take the L');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'ripp') {
+    msg.reply('Take the L');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'rippp') {
+    msg.reply('Take the L');
+  }
+});
+
+client.on('message', msg => {
   if (msg.content === 'Oof') {
     msg.reply('OOF');
   }

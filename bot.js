@@ -31,25 +31,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if (message.content === 'OOFING IN MINECRAFT') {
-    message.channel.send('OOFING IN MINECRAFT');
-  }
-});
-
-client.on('message', message => {
   if (message.content === 'oofing in minecraft') {
-    message.channel.send('OOFING IN MINECRAFT');
-  }
-});
-
-client.on('message', message => {
-  if (message.content === 'OOFing') {
-    message.channel.send('OOFING IN MINECRAFT');
-  }
-});
-
-client.on('message', message => {
-  if (message.content === 'oofing') {
     message.channel.send('OOFING IN MINECRAFT');
   }
 });

@@ -12,30 +12,45 @@ exports.ActivityTypes = [
   'WATCHING',
 ];
 
-// Create an event listener for messages
 client.on('message', message => {
-  // If the message is "ping"
   if (message.content === 'bad boi') {
-    // Send "pong" to the same channel
     message.channel.send('Yup a Bad Boi');
   }
 });
 
-// Create an event listener for messages
 client.on('message', message => {
-  // If the message is "ping"
   if (message.content === 'Bad Boi') {
-    // Send "pong" to the same channel
     message.channel.send('Yup a Bad Boi');
   }
 });
 
-// Create an event listener for messages
 client.on('message', message => {
-  // If the message is "ping"
   if (message.content === 'Bad boi') {
-    // Send "pong" to the same channel
     message.channel.send('Yup a Bad Boi');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'OOFING IN MINECRAFT') {
+    message.channel.send('OOFING IN MINECRAFT');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'oofing in minecraft') {
+    message.channel.send('OOFING IN MINECRAFT');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'OOFing') {
+    message.channel.send('OOFING IN MINECRAFT');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'oofing') {
+    message.channel.send('OOFING IN MINECRAFT');
   }
 });
 

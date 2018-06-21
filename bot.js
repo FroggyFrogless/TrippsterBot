@@ -132,36 +132,6 @@ client.on('message', msg => {
   }
 });
 
-client.on('message', msg => {
-  if (msg.content === 'OOF') {
-    msg.reply('OOF');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'L') {
-    msg.reply('L');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'l') {
-    msg.reply('L');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'f') {
-    msg.reply('F');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'F') {
-    msg.reply('F');
-  }
-});
-
 client.on('message', message => {
   // Ignore messages that aren't from a guild
   if (!message.guild) return;

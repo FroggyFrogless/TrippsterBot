@@ -42,6 +42,18 @@ client.on('message', message => {
   }
 });
 
+client.on('message', message => {
+  if (message.content === 'Oofing') {
+    message.channel.send('OOFING IN MINECRAFT');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'Oofing in minecraft') {
+    message.channel.send('OOFING IN MINECRAFT');
+  }
+});
+
 client.on('message', msg => {
   if (msg.content === '~~sponsor') {
     msg.reply(' https://gaming.youtube.com/c/Trippster?action=sponsor ');

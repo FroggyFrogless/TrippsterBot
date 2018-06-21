@@ -12,6 +12,33 @@ exports.ActivityTypes = [
   'WATCHING',
 ];
 
+// Create an event listener for messages
+client.on('message', message => {
+  // If the message is "ping"
+  if (message.content === 'bad boi') {
+    // Send "pong" to the same channel
+    message.channel.send('Yup a Bad Boi');
+  }
+});
+
+// Create an event listener for messages
+client.on('message', message => {
+  // If the message is "ping"
+  if (message.content === 'Bad Boi') {
+    // Send "pong" to the same channel
+    message.channel.send('Yup a Bad Boi');
+  }
+});
+
+// Create an event listener for messages
+client.on('message', message => {
+  // If the message is "ping"
+  if (message.content === 'Bad boi') {
+    // Send "pong" to the same channel
+    message.channel.send('Yup a Bad Boi');
+  }
+});
+
 client.on('message', msg => {
   if (msg.content === 'rip') {
     msg.reply('Take the L');

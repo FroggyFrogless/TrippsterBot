@@ -36,9 +36,9 @@ client.on('message', message => {
   }
 });
 
-client.on('message', msg => {
-  if (msg.content === 'rip') {
-    msg.reply('Take the L');
+client.on('message', message => {
+  if (message.content === 'oofing') {
+    message.channel.send('OOFING IN MINECRAFT');
   }
 });
 

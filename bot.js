@@ -145,6 +145,12 @@ client.on('message', msg => {
 });
 
 client.on('message', msg => {
+  if (msg.content === 'rip') {
+    msg.reply('Take the L');
+  }
+});
+
+client.on('message', msg => {
   if (msg.content === 'OOF') {
     msg.reply('OOF');
   }

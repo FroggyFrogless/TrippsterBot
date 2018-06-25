@@ -31,6 +31,18 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+  if (message.content === 'froggyflopless') {
+    message.channel.send('https://www.youtube.com/watch?v=sBduX80xUvU&t=55s');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'FroggyFLOPless') {
+    message.channel.send('https://www.youtube.com/watch?v=sBduX80xUvU&t=55s');
+  }
+});
+
+client.on('message', message => {
   if (message.content === 'hey') {
     message.channel.send('hey is for horses');
   }

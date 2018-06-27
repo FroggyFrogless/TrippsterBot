@@ -31,6 +31,41 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+  if (message.content === 'lol') {
+    message.channel.send('Laughing Out Load');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'Lol') {
+    message.channel.send('Laughing Out Load');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'LOL') {
+    message.channel.send('Laughing Out Load');
+  }
+
+});client.on('message', message => {
+  if (message.content === 'l0l') {
+    message.channel.send('Laughing Out Load');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'L0L') {
+    message.channel.send('Laughing Out Load');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'lOl') {
+    message.channel.send('Laughing Out Load');
+  }
+});
+
+client.on('message', message => {
   if (message.content === 'froggyflopless') {
     message.channel.send('https://www.youtube.com/watch?v=sBduX80xUvU&t=55s');
   }

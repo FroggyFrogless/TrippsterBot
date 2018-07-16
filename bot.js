@@ -20,7 +20,7 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.content === 'imagine dragons') {
-    message.channel.send('https://www.youtube.com/watch?v=fKopy74weus https://youtu.be/7wtfhZwyrcc https://www.youtube.com/watch?v=ktvTqknDobU https://youtu.be/gOsM-DYAEhY https://youtu.be/mWRsgZuwf_8 https://youtu.be/sENM2wA_FTg');
+    message.channel.send('https://www.youtube.com/playlist?list=PLJRvAePWdEhT01YaWsXlfFx0id8VXog70');
   }
 });
 

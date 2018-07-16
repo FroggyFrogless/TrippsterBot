@@ -26,7 +26,7 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.content === 'stream songs') {
-    message.channel.send('https://www.youtube.com/watch?v=ze_94FDyzPw https://www.youtube.com/watch?v=dQv3_P2DJvg https://www.youtube.com/watch?v=QK0sw18mn8w https://www.youtube.com/watch?v=525kld7WCnE https://www.youtube.com/watch?v=2LmWBaFj160');
+    message.channel.send('https://www.youtube.com/playlist?list=PLB6LBPeKyNGF5LAf7Azd2D5b-H1ctJb0j');
   }
 });
 

@@ -19,6 +19,18 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+  if (message.content === 'imagine dragons') {
+    message.channel.send('https://www.youtube.com/watch?v=fKopy74weus https://youtu.be/7wtfhZwyrcc https://www.youtube.com/watch?v=ktvTqknDobU https://youtu.be/gOsM-DYAEhY https://youtu.be/mWRsgZuwf_8 https://youtu.be/sENM2wA_FTg');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'stream songs') {
+    message.channel.send('https://www.youtube.com/watch?v=ze_94FDyzPw https://www.youtube.com/watch?v=dQv3_P2DJvg https://www.youtube.com/watch?v=QK0sw18mn8w https://www.youtube.com/watch?v=525kld7WCnE https://www.youtube.com/watch?v=2LmWBaFj160');
+  }
+});
+
+client.on('message', message => {
   if (message.content === 'Bad Boi') {
     message.channel.send('Yup a Bad Boi');
   }

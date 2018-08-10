@@ -55,6 +55,18 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+  if (message.content === 'btw RUO means rip') {
+    message.channel.send('Take the L');
+  }
+});
+
+client.on('message', message => {
+  if (message.content === 'btw ruo means rip') {
+    message.channel.send('Take the L');
+  }
+});
+
+client.on('message', message => {
   if (message.content === 'froggyflopless') {
     message.channel.send('https://www.youtube.com/watch?v=sBduX80xUvU&t=55s');
   }

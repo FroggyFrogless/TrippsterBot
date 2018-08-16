@@ -128,7 +128,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'oof') {
-    msg.reply('OOF');
+    msg.reply('hi');
   }
 });
 
@@ -200,13 +200,13 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'OOF') {
-    msg.reply('OOF');
+    msg.reply('hi');
   }
 });
 
 client.on('message', msg => {
   if (msg.content === 'L') {
-    msg.reply('L');
+    msg.reply('hi');
   }
 });
 
@@ -224,7 +224,7 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'F') {
-    msg.reply('F');
+    msg.reply('hi');
   }
 });
 

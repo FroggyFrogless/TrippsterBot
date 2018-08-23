@@ -79,18 +79,6 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if (message.content === 'hey') {
-    message.channel.send('hey is for horses');
-  }
-});
-
-client.on('message', message => {
-  if (message.content === 'Hey') {
-    message.channel.send('Hey is for horses');
-  }
-});
-
-client.on('message', message => {
   if (message.content === 'oofing in minecraft') {
     message.channel.send('OOFING IN MINECRAFT');
   }

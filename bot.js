@@ -13,7 +13,7 @@ exports.ActivityTypes = [
 ];
 
 client.on('message', msg => {
-  if (msg.content === '***Manager*** [Manager] FR066Y » OOF') {
+  if (msg.content === '*Manager* [Manager] FR066Y » OOF') {
     msg.reply('OOF');
   }
 });

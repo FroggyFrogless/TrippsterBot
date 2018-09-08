@@ -19,6 +19,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+  if (message.content === 'Manager [Manager] FR066Y » OOF') {
+    message.channel.send('OOF');
+  }
+});
+
+client.on('message', message => {
   if (message.content === 'imagine dragons') {
     message.channel.send('https://www.youtube.com/playlist?list=PLJRvAePWdEhT01YaWsXlfFx0id8VXog70');
   }

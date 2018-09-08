@@ -12,15 +12,15 @@ exports.ActivityTypes = [
   'WATCHING',
 ];
 
-client.on('message', message => {
-  if (message.content === 'bad boi') {
-    message.channel.send('Yup a Bad Boi');
+client.on('message', msg => {
+  if (msg.content === '***Manager*** [Manager] FR066Y » OOF') {
+    msg.reply('OOF');
   }
 });
 
 client.on('message', message => {
-  if (message.content === 'Manager [Manager] FR066Y » OOF') {
-    message.channel.send('OOF');
+  if (message.content === 'bad boi') {
+    message.channel.send('Yup a Bad Boi');
   }
 });
 

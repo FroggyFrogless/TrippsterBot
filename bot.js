@@ -18,7 +18,7 @@ client.on('message', msg => {
 
 //Help Help Help Help Help Help Help Help Help
   else if (msg.content.toLowerCase() === 'tthelp') {
-    msg.reply('Currently got couple custom commands:\n**TTdiscord**, **TThelp**, **TTopenparty**, **TTpatreon**, **TTtwitch**, **TTversion**, **TTyoutube**\n\nWe got multiple message replies which are:\n**E**, **F**, **froggyflopless**, **imagine dragons**, **just**, **L**, **open party**, **oof**, **rip**, **shut up**, **tt**, and plenty more!\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
+    msg.reply('Currently got couple custom commands:\n**TTdiscord**, **TThelp**, **TTopenparty**, **TTpatreon**, **TTtwitch**, **TTversion**, **TTyoutube**\n\nWe got multiple message replies which are:\n**Believer**, **E**, **F**, **froggyflopless**, **just**, **L**, **open party**, **oof**, **rip**, **shut up**, **tt**, and plenty more!\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
   }else if (msg.content.toLowerCase() === 'tt') {
     msg.reply('Use `TThelp` to see help page!');
   }
@@ -41,7 +41,7 @@ client.on('message', msg => {
   
 //Version Version Version Version Version Version Version Version Version
   else if (msg.content.toLowerCase() === 'ttversion') {
-    msg.channel.send('Currently on Build **v106**!');
+    msg.channel.send('Currently on Build **v107**!');
   }
 //Version Version Version Version Version Version Version Version Version
   
@@ -59,6 +59,13 @@ client.on('message', msg => {
     msg.channel.send('Yup they really are a Bad Boi!');
   }
   
+//Believer
+  else if (msg.content.toLowerCase() === 'believer') {
+    msg.channel.send('https://youtu.be/nMuoJonJ9ao');
+  }else if (msg.content.toLowerCase() === 'imagine dragons') {
+    msg.channel.send('https://youtu.be/nMuoJonJ9ao');
+  }
+  
 //EZ
   else if (msg.content.toLowerCase() === 'e') {
     msg.channel.send('Z');
@@ -74,11 +81,6 @@ client.on('message', msg => {
     msg.channel.send('https://youtu.be/sBduX80xUvU?t=25');
   }
   
-//Imagine Dragons
-  else if (msg.content.toLowerCase() === 'imagine dragons') {
-    msg.channel.send('https://youtu.be/nMuoJonJ9ao');
-  }
-  
 //Just Better
   else if (msg.content.toLowerCase() === 'just') {
     msg.channel.send('Better');
@@ -89,6 +91,16 @@ client.on('message', msg => {
 //L
   else if (msg.content.toLowerCase() === 'l') {
     msg.reply('L');
+  }
+  
+//Missing Footage
+  else if (msg.content.toLowerCase() === 'missing footage') {
+    msg.reply('https://youtu.be/bGblNvKRYro');
+  }
+  
+//Pudding
+  else if (msg.content.toLowerCase() === 'pudding') {
+    msg.channel.send('Who can resist pudding?');
   }
   
 //Open Party

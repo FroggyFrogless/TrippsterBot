@@ -5,17 +5,18 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
+client.on('message', msg => {
+  
 //Main Commands
 //Main Commands
 //Main Commands
-
+  
 //Discord
   if (msg.content.toLowerCase() === 'ttdiscord') {
     msg.reply('https://discord.gg/CrMCfZMwZ2');
   }
 
 //Help Help Help Help Help Help Help Help Help
-client.on('message', msg => {
   else if (msg.content.toLowerCase() === 'tthelp') {
     msg.reply('Currently got couple custom commands:\n**TTdiscord**, **TThelp**, **TTopenparty**, **TTpatreon**, **TTtwitch**, **TTversion**, **TTyoutube**\n\nWe got multiple message replies which are:\n**E**, **F**, **froggyflopless**, **imagine dragons**, **just**, **L**, **open party**, **oof**, **rip**, **shut up**, **tt**, and plenty more!\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
   }else if (msg.content.toLowerCase() === 'tt') {
@@ -40,7 +41,7 @@ client.on('message', msg => {
   
 //Version Version Version Version Version Version Version Version Version
   else if (msg.content.toLowerCase() === 'ttversion') {
-    msg.channel.send('Currently on Build **v105**!');
+    msg.channel.send('Currently on Build **v106**!');
   }
 //Version Version Version Version Version Version Version Version Version
   

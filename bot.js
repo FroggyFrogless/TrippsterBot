@@ -5,8 +5,6 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-client.user.setActivity("TrashTripp on YouTube! Prefix:TT", { type: "WATCHING" })
-
 client.on('message', msg => {
   if (msg.content === '*Manager* [Manager] FR066Y » OOF') {
     msg.reply('OOF');

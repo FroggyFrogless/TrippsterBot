@@ -5,12 +5,7 @@ client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-exports.ActivityTypes = [
-  'PLAYING',
-  'STREAMING',
-  'LISTENING',
-  'WATCHING',
-];
+client.user.setActivity("TrashTripp on YouTube! Prefix:TT", { type: "WATCHING" })
 
 client.on('message', msg => {
   if (msg.content === '*Manager* [Manager] FR066Y » OOF') {
@@ -26,67 +21,31 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.content === 'imagine dragons') {
-    message.channel.send('https://www.youtube.com/playlist?list=PLJRvAePWdEhT01YaWsXlfFx0id8VXog70');
+    message.channel.send('https://youtu.be/nMuoJonJ9ao');
   }
 });
 
 client.on('message', message => {
-  if (message.content === 'stream songs') {
-    message.channel.send('https://www.youtube.com/playlist?list=PLB6LBPeKyNGF5LAf7Azd2D5b-H1ctJb0j');
+  if (message.content === 'Imagine dragons') {
+    message.channel.send('https://youtu.be/nMuoJonJ9ao');
   }
 });
 
 client.on('message', message => {
-  if (message.content === 'Bad Boi') {
-    message.channel.send('Yup a Bad Boi');
-  }
-});
-
-client.on('message', message => {
-  if (message.content === 'Bad boi') {
-    message.channel.send('Yup a Bad Boi');
-  }
-});
-
-client.on('message', message => {
-  if (message.content === 'ruo') {
-    message.channel.send('btw ruo means rip');
-  }
-});
-
-client.on('message', message => {
-  if (message.content === 'RUO') {
-    message.channel.send('btw RUO means rip');
-  }
-});
-
-client.on('message', message => {
-  if (message.content === 'btw RUO means rip') {
-    message.channel.send('Take the L');
-  }
-});
-
-client.on('message', message => {
-  if (message.content === 'btw ruo means rip') {
-    message.channel.send('Take the L');
+  if (message.content === 'Imagine Dragons') {
+    message.channel.send('https://youtu.be/nMuoJonJ9ao');
   }
 });
 
 client.on('message', message => {
   if (message.content === 'froggyflopless') {
-    message.channel.send('https://www.youtube.com/watch?v=sBduX80xUvU&t=55s');
+    message.channel.send('https://youtu.be/sBduX80xUvU?t=25');
   }
 });
 
 client.on('message', message => {
   if (message.content === 'FroggyFLOPless') {
-    message.channel.send('https://www.youtube.com/watch?v=sBduX80xUvU&t=55s');
-  }
-});
-
-client.on('message', message => {
-  if (message.content === 'oofing in minecraft') {
-    message.channel.send('OOFING IN MINECRAFT');
+    message.channel.send('https://youtu.be/sBduX80xUvU?t=25');
   }
 });
 
@@ -102,21 +61,15 @@ client.on('message', message => {
   }
 });
 
-client.on('message', message => {
-  if (message.content === 'Oofing in minecraft') {
-    message.channel.send('OOFING IN MINECRAFT');
+client.on('message', msg => {
+  if (msg.content === 'patreon') {
+    msg.reply(' https://www.patreon.com/trashtripp ');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content === '~~sponsor') {
-    msg.reply(' https://gaming.youtube.com/c/Trippster?action=sponsor ');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === '~~sponser') {
-    msg.reply(' https://gaming.youtube.com/c/Trippster?action=sponsor ');
+  if (msg.content === 'Patreon') {
+    msg.reply(' https://www.patreon.com/trashtripp ');
   }
 });
 
@@ -134,18 +87,6 @@ client.on('message', msg => {
 
 client.on('message', msg => {
   if (msg.content === 'RIPPP') {
-    msg.reply('Take the L');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'RIPP') {
-    msg.reply('Take the L');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'ripp') {
     msg.reply('Take the L');
   }
 });
@@ -219,6 +160,72 @@ client.on('message', msg => {
 client.on('message', msg => {
   if (msg.content === 'F') {
     msg.reply('F');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'E') {
+    msg.reply('Z');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'e') {
+    msg.reply('z');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'just') {
+    msg.reply('better');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'Just') {
+    msg.reply('Better');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'Just Better') {
+    msg.reply('Im Better');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'Just better') {
+    msg.reply('Im Better');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'just better') {
+    msg.reply('Im Better');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'SHUT UP') {
+    msg.reply('HOW ABOUT YOU? !warn for being TOXIC!');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'Shut Up') {
+    msg.reply('How about you?');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'Shut up') {
+    msg.reply('How about you?');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content === 'shut up') {
+    msg.reply('How about you?');
   }
 });
 

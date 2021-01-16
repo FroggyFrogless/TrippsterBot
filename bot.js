@@ -29,15 +29,15 @@ client.on('message', msg => {
 //Replies
 
 //Bad Boi
-client.on('message', message => {
-  if (message.content.toLowerCase() === 'bad boi') {
-    message.channel.send('Yup really are a Bad Boi!');
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'bad boi') {
+    msg.channel.send('Yup they really are a Bad Boi!');
   }
 });
 //EZ
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'e') {
-    message.channel.send('Z');
+    msg.channel.send('');
   }
 });
 //F
@@ -47,21 +47,21 @@ client.on('message', msg => {
   }
 });
 //FroggyFLOPless
-client.on('message', message => {
-  if (message.content.toLowerCase() === 'froggyflopless') {
-    message.channel.send('https://youtu.be/sBduX80xUvU?t=25');
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'froggyflopless') {
+    msg.channel.send('https://youtu.be/sBduX80xUvU?t=25');
   }
 });
 //Imagine Dragons
-client.on('message', message => {
-  if (message.content.toLowerCase() === 'imagine dragons') {
-    message.channel.send('https://youtu.be/nMuoJonJ9ao');
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'imagine dragons') {
+    msg.channel.send('https://youtu.be/nMuoJonJ9ao');
   }
 });
 //Just Better
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'just') {
-    message.channel.send('Better');
+    msg.channel.send('Better');
   }else if (msg.content.toLowerCase() === 'just better') {
     msg.reply('Im Better');
   }
@@ -75,15 +75,15 @@ client.on('message', msg => {
 //OOF
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'oof') {
-    message.channel.send('OOF');
+    msg.channel.send('OOF');
   }
 });
 //OOFING IN MINECRAFT
-client.on('message', message => {
-  if (message.content.toLowerCase() === 'oofing') {
-    message.channel.send('OOFING IN MINECRAFT');
-  }else if (message.content.toLowerCase() === 'oofing in minecraft') {
-    message.channel.send('OOFING IN MINECRAFT');
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'oofing') {
+    msg.channel.send('OOFING IN MINECRAFT');
+  }else if (msg.content.toLowerCase() === 'oofing in minecraft') {
+    msg.channel.send('OOFING IN MINECRAFT');
   }
 });
 //RIP

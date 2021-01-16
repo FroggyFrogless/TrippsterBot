@@ -40,8 +40,8 @@ client.on('message', msg => {
   }
   
 //Version Version Version Version Version Version Version Version Version
-  else if (msg.content.toLowerCase() === 'ttversion') {
-    msg.channel.send('Currently on Build **v107**!');
+  else if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions') {
+    msg.channel.send('Currently on Build **v108**!');
   }
 //Version Version Version Version Version Version Version Version Version
   
@@ -79,6 +79,11 @@ client.on('message', msg => {
 //FroggyFLOPless
   else if (msg.content.toLowerCase() === 'froggyflopless') {
     msg.channel.send('https://youtu.be/sBduX80xUvU?t=25');
+  }
+  
+//Hold Up
+  else if (msg.content.toLowerCase() === 'hold up') {
+    msg.channel.send('What are we waiting for?');
   }
   
 //Just Better

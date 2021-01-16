@@ -18,7 +18,7 @@ client.on('message', msg => {
 
 //Help Help Help Help Help Help Help Help Help
   else if (msg.content.toLowerCase() === 'tthelp') {
-    msg.reply('Currently got couple custom commands:\n**TTdiscord**, **TThelp**, **TTopenparty**, **TTpatreon**, **TTtwitch**, **TTversion**, **TTyoutube**\n\nWe got multiple message replies which are:\n**Believer**, **E**, **F**, **froggyflopless**, **just**, **L**, **open party**, **oof**, **rip**, **shut up**, **tt**, and plenty more!\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
+    msg.reply('Currently got couple custom commands:\n**TTdiscord**, **TThelp**, **TTopenparty**, **TTpatreon**, **TTtwitch**, **TTversion**, **TTyoutube**\n\nWe got multiple message replies which are:\n**Believer**, **E**, **F**, **froggyflopless**, **just**, **L**, **open party**, **oof**, **rip**, **ruo**, **shut up**, **tt**, and plenty more!\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
   }else if (msg.content.toLowerCase() === 'tt') {
     msg.reply('Use `TThelp` to see help page!');
   }
@@ -41,7 +41,7 @@ client.on('message', msg => {
   
 //Version Version Version Version Version Version Version Version Version
   else if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions') {
-    msg.channel.send('Currently on Build **v109**!');
+    msg.channel.send('Currently on Build **v110**!');
   }
 //Version Version Version Version Version Version Version Version Version
   
@@ -96,6 +96,11 @@ client.on('message', msg => {
     msg.reply('L');
   }
   
+//Mai's Sl@ve (Lukinator)
+  else if (msg.content.toLowerCase() === 'mai\'s slave') {
+    msg.channel.send('<@697871765598109746>');
+  }
+  
 //Missing Footage
   else if (msg.content.toLowerCase() === 'missing footage' || msg.content.toLowerCase() === 'corrupt footage') {
     msg.reply('https://youtu.be/bGblNvKRYro');
@@ -124,6 +129,15 @@ client.on('message', msg => {
 //RIP
   else if (msg.content.toLowerCase() === 'rip' || msg.content.toLowerCase() === 'ripp' || msg.content.toLowerCase() === 'rippp') {
     msg.reply('Take the L');
+  }
+  
+//RUO
+  else if (msg.content.toLowerCase() === 'ruo') {
+    msg.reply('RUO');
+  }else if (msg.content.toLowerCase() === 'praise ruo') {
+    msg.reply('Don\'t forget about you\'re daily praise to the Goddess Ruo');
+  }else if (msg.content.toLowerCase() === 'what does ruo mean') {
+    msg.reply('Ruo is a goddess. This video is where She was found https://www.youtube.com/watch?v=9wPzvLsj5G4');
   }
   
 //Shut Up

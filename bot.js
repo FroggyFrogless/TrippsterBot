@@ -90,7 +90,7 @@ client.on('message', msg => {
   }else if (msg.content.toLowerCase() === 'shut up') {
     msg.reply('How about you?');
   }
-}
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);

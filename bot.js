@@ -60,7 +60,9 @@ client.on('message', message => {
 });
 //Just Better
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'just better') {
+  if (msg.content.toLowerCase() === 'just') {
+    message.channel.send('Better');
+  }else if (msg.content.toLowerCase() === 'just better') {
     msg.reply('Im Better');
   }
 });

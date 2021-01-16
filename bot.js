@@ -12,7 +12,7 @@ client.on('ready', () => {
 //Help
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'tthelp') {
-    msg.reply('Currently got only one custom commands:\n**TTpatreon**\n\nWe got multiple message replies which are:\n**E**, **F**, **L**, **rip**, **oof**, **imagine dragons**, **froggyflopless**, **bad boi**, **just**, **shut up**\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
+    msg.reply('Currently got couple custom commands:\n**TThelp**, **TTpatreon**, **TTversion**\n\nWe got multiple message replies which are:\n**E**, **F**, **froggyflopless**, **imagine dragons**, **just**, **L**, **oof**, **rip**, **shut up**, and plenty more!\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
   }else if (msg.content.toLowerCase() === 'tt') {
     msg.reply('Use `TThelp` to see help page!');
   }
@@ -20,6 +20,11 @@ client.on('message', msg => {
 //Patreon
   else if (msg.content.toLowerCase() === 'ttpatreon') {
     msg.reply('head over to <#765672137817063475> for more information or just click <https://www.patreon.com/trashtripp>!');
+  }
+  
+//Version
+  else if (msg.content.toLowerCase() === 'ttversion') {
+    msg.channel.send('Currently on Build v102!');
   }
 
 //Replies

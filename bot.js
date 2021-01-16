@@ -6,102 +6,85 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
+  
+  //Main Commands
+  //Main Commands
+  //Main Commands
+  
+  //Help
   if (msg.content.toLowerCase() === 'tthelp') {
     msg.reply('Currently got only one custom commands:\n**TTpatreon**\n\nWe got multiple message replies which are:\n**E**, **F**, **L**, **rip**, **oof**, **imagine dragons**, **froggyflopless**, **bad boi**, **just**, **shut up**\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
   }
-});
-
-client.on('message', msg => {
   if (msg.content.toLowerCase() === 'tt') {
     msg.reply('Use `TThelp` to see help page!');
   }
-});
-
-client.on('message', message => {
-  if (message.content.toLowerCase() === 'bad boi') {
-    message.channel.send('Yup really are a Bad Boi!');
-  }
-});
-
-client.on('message', message => {
-  if (message.content.toLowerCase() === 'imagine dragons') {
-    message.channel.send('https://youtu.be/nMuoJonJ9ao');
-  }
-});
-
-client.on('message', message => {
-  if (message.content.toLowerCase() === 'froggyflopless') {
-    message.channel.send('https://youtu.be/sBduX80xUvU?t=25');
-  }
-});
-
-client.on('message', message => {
-  if (message.content.toLowerCase() === 'oofing') {
-    message.channel.send('OOFING IN MINECRAFT');
-  }
-});
-
-client.on('message', message => {
-  if (message.content.toLowerCase() === 'oofing in minecraft') {
-    message.channel.send('OOFING IN MINECRAFT');
-  }
-});
-
-client.on('message', msg => {
+  
+  //Patreon
   if (msg.content.toLowerCase() === 'ttpatreon') {
     msg.reply(' https://www.patreon.com/trashtripp ');
   }
-});
-
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'oof') {
-    message.channel.send('OOF');
+  
+  //Replies
+  //Replies
+  //Replies
+  
+  //Bad Boi
+  if (message.content.toLowerCase() === 'bad boi') {
+    message.channel.send('Yup really are a Bad Boi!');
   }
-});
-
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'rippp') {
-    msg.reply('Take the L');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'ripp') {
-    msg.reply('Take the L');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'rip') {
-    msg.reply('Take the L');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'l') {
-    msg.reply('L');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'f') {
-    msg.reply('F');
-  }
-});
-
-client.on('message', msg => {
+  
+  //EZ
   if (msg.content.toLowerCase() === 'e') {
     message.channel.send('Z');
   }
-});
-
-client.on('message', msg => {
+  
+  //F
+  if (msg.content.toLowerCase() === 'f') {
+    msg.reply('F');
+  }
+  
+  //FroggyFLOPless
+  if (message.content.toLowerCase() === 'froggyflopless') {
+    message.channel.send('https://youtu.be/sBduX80xUvU?t=25');
+  }
+  
+  //Imagine Dragons
+  if (message.content.toLowerCase() === 'imagine dragons') {
+    message.channel.send('https://youtu.be/nMuoJonJ9ao');
+  }
+  
+  //Just Better
   if (msg.content.toLowerCase() === 'just better') {
     msg.reply('Im Better');
   }
-});
-
-client.on('message', msg => {
+  
+  //L
+  if (msg.content.toLowerCase() === 'l') {
+    msg.reply('L');
+  }
+  
+  //OOF
+  if (msg.content.toLowerCase() === 'oof') {
+    message.channel.send('OOF');
+  }
+  
+  //OOFING IN MINECRAFT
+  if (message.content.toLowerCase() === 'oofing') {
+    message.channel.send('OOFING IN MINECRAFT');
+  }else if (message.content.toLowerCase() === 'oofing in minecraft') {
+    message.channel.send('OOFING IN MINECRAFT');
+  }
+  
+  //RIPs
+  if (msg.content.toLowerCase() === 'rip') {
+    msg.reply('Take the L');
+  }else if (msg.content.toLowerCase() === 'ripp') {
+    msg.reply('Take the L');
+  }else if (msg.content.toLowerCase() === 'rippp') {
+    msg.reply('Take the L');
+  }
+  
+  //Shut Up
   if (msg.content === 'SHUT UP') {
     msg.reply('HOW ABOUT YOU? !warn for being TOXIC!');
   }else if (msg.content.toLowerCase() === 'shut up') {

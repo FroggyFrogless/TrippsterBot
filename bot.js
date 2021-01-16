@@ -41,7 +41,7 @@ client.on('message', msg => {
   
 //Version Version Version Version Version Version Version Version Version
   else if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions') {
-    msg.channel.send('Currently on Build **v108**!');
+    msg.channel.send('Currently on Build **v109**!');
   }
 //Version Version Version Version Version Version Version Version Version
   
@@ -60,9 +60,7 @@ client.on('message', msg => {
   }
   
 //Believer
-  else if (msg.content.toLowerCase() === 'believer') {
-    msg.channel.send('https://youtu.be/nMuoJonJ9ao');
-  }else if (msg.content.toLowerCase() === 'imagine dragons') {
+  else if (msg.content.toLowerCase() === 'believer' || msg.content.toLowerCase() === 'imagine dragons') {
     msg.channel.send('https://youtu.be/nMuoJonJ9ao');
   }
   
@@ -99,7 +97,7 @@ client.on('message', msg => {
   }
   
 //Missing Footage
-  else if (msg.content.toLowerCase() === 'missing footage') {
+  else if (msg.content.toLowerCase() === 'missing footage' || msg.content.toLowerCase() === 'corrupt footage') {
     msg.reply('https://youtu.be/bGblNvKRYro');
   }
   
@@ -109,17 +107,7 @@ client.on('message', msg => {
   }
   
 //Open Party
-  else if (msg.content.toLowerCase() === 'do a open party') {
-    msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
-  }else if (msg.content.toLowerCase() === 'do open party') {
-    msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
-  }else if (msg.content.toLowerCase() === 'open party') {
-    msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
-  }else if (msg.content.toLowerCase() === 'do a openparty') {
-    msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
-  }else if (msg.content.toLowerCase() === 'do openparty') {
-    msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
-  }else if (msg.content.toLowerCase() === 'openparty') {
+  else if (msg.content.toLowerCase() === 'do a open party' || msg.content.toLowerCase() === 'do open party' || msg.content.toLowerCase() === 'open party' || msg.content.toLowerCase() === 'do a openparty' || msg.content.toLowerCase() === 'do openparty' || msg.content.toLowerCase() === 'openparty') {
     msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
   }
   
@@ -129,18 +117,12 @@ client.on('message', msg => {
   }
   
 //OOFING IN MINECRAFT
-  else if (msg.content.toLowerCase() === 'oofing') {
-    msg.channel.send('OOFING IN MINECRAFT');
-  }else if (msg.content.toLowerCase() === 'oofing in minecraft') {
+  else if (msg.content.toLowerCase() === 'oofing in minecraft' || msg.content.toLowerCase() === 'oofing') {
     msg.reply('OOFING IN MINECRAFT');
   }
   
 //RIP
-  else if (msg.content.toLowerCase() === 'rip') {
-    msg.reply('Take the L');
-  }else if (msg.content.toLowerCase() === 'ripp') {
-    msg.reply('Take the L');
-  }else if (msg.content.toLowerCase() === 'rippp') {
+  else if (msg.content.toLowerCase() === 'rip' || msg.content.toLowerCase() === 'ripp' || msg.content.toLowerCase() === 'rippp') {
     msg.reply('Take the L');
   }
   

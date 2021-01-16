@@ -12,7 +12,7 @@ client.on('ready', () => {
 //Help
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'tthelp') {
-    msg.reply('Currently got couple custom commands:\n**TThelp**, **TTpatreon**, **TTversion**\n\nWe got multiple message replies which are:\n**E**, **F**, **froggyflopless**, **imagine dragons**, **just**, **L**, **oof**, **rip**, **shut up**, and plenty more!\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
+    msg.reply('Currently got couple custom commands:\n**TThelp**, **TTpatreon**, **TTtwitch**, **TTversion**, **TTyoutube\n\nWe got multiple message replies which are:\n**E**, **F**, **froggyflopless**, **imagine dragons**, **just**, **L**, **oof**, **rip**, **shut up**, and plenty more!\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
   }else if (msg.content.toLowerCase() === 'tt') {
     msg.reply('Use `TThelp` to see help page!');
   }
@@ -22,9 +22,20 @@ client.on('message', msg => {
     msg.reply('head over to <#765672137817063475> for more information or just click <https://www.patreon.com/trashtripp>!');
   }
   
-//Version
+//Twitch
+  else if (msg.content.toLowerCase() === 'tttwitch') {
+    msg.reply('https://www.twitch.tv/trashtripp');
+  }
+  
+//Version Version Version Version Version Version Version Version Version
   else if (msg.content.toLowerCase() === 'ttversion') {
-    msg.channel.send('Currently on Build v102!');
+    msg.channel.send('Currently on Build v103!');
+  }
+//Version Version Version Version Version Version Version Version Version
+  
+//YouTube
+  else if (msg.content.toLowerCase() === 'ttyoutube') {
+    msg.reply('https://www.youtube.com/channel/UCumtnW8lcbm9Zdk_83-bXkQ');
   }
 
 //Replies

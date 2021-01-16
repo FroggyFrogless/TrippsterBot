@@ -33,7 +33,7 @@ client.on('message', msg => {
   
 //EZ
   else if (msg.content.toLowerCase() === 'e') {
-    msg.channel.send('');
+    msg.channel.send('Z');
   }
   
 //F

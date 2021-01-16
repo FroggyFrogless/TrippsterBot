@@ -19,7 +19,7 @@ client.on('message', msg => {
   
 //Patreon
   else if (msg.content.toLowerCase() === 'ttpatreon') {
-    msg.reply(' head over to <#765672137817063475> for more information or just click <https://www.patreon.com/trashtripp>!');
+    msg.reply('head over to <#765672137817063475> for more information or just click <https://www.patreon.com/trashtripp>!');
   }
 
 //Replies
@@ -65,14 +65,14 @@ client.on('message', msg => {
   
 //OOF
   else if (msg.content.toLowerCase() === 'oof') {
-    msg.channel.send('OOF');
+    msg.reply('OOF');
   }
   
 //OOFING IN MINECRAFT
   else if (msg.content.toLowerCase() === 'oofing') {
     msg.channel.send('OOFING IN MINECRAFT');
   }else if (msg.content.toLowerCase() === 'oofing in minecraft') {
-    msg.channel.send('OOFING IN MINECRAFT');
+    msg.reply('OOFING IN MINECRAFT');
   }
   
 //RIP

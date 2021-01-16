@@ -7,7 +7,7 @@ client.on('ready', () => {
 
 client.on('message', msg => {
   if (msg.content.toLowerCase() === 'tthelp') {
-    msg.reply('Currently got only one custom commands./nTTpatreon\n We got multiple message replies which are:/nE, F, L, rip, oof, imagine dragons, froggyflopless, just, shut up');
+    msg.reply('Currently got only one custom commands:\n   TTpatreon\n   We got multiple message replies which are:\n   E, F, L, rip, oof, imagine dragons, froggyflopless, just, shut up');
   }
 });
 

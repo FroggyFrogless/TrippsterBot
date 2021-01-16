@@ -3,6 +3,13 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setPresence({
+        status: "online",  //You can show online, idle....
+        game: {
+            name: "TrashTripp's YouTube Channel! Prefix:TT",  //The message shown
+            type: "WATCHING" //PLAYING: WATCHING: LISTENING: STREAMING:
+        }
+    });
 });
 
 client.on('message', msg => {

@@ -6,199 +6,103 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content === '*Manager* [Manager] FR066Y » OOF') {
-    msg.reply('OOF');
+  if (msg.content.toLowerCase() === 'tthelp') {
+    msg.reply('Currently got only one custom commands./nTTpatreon\n We got multiple message replies which are:/nE, F, L, rip, oof, imagine dragons, froggyflopless, just, shut up');
+  }
+});
+
+client.on('message', msg => {
+  if (msg.content.toLowerCase() === 'tt') {
+    msg.reply('Use `TThelp` to see help page!');
   }
 });
 
 client.on('message', message => {
-  if (message.content === 'bad boi') {
-    message.channel.send('Yup a Bad Boi');
+  if (message.content.toLowerCase() === 'bad boi') {
+    message.channel.send('Yup really are a Bad Boi!');
   }
 });
 
 client.on('message', message => {
-  if (message.content === 'imagine dragons') {
+  if (message.content.toLowerCase() === 'imagine dragons') {
     message.channel.send('https://youtu.be/nMuoJonJ9ao');
   }
 });
 
 client.on('message', message => {
-  if (message.content === 'Imagine dragons') {
-    message.channel.send('https://youtu.be/nMuoJonJ9ao');
-  }
-});
-
-client.on('message', message => {
-  if (message.content === 'Imagine Dragons') {
-    message.channel.send('https://youtu.be/nMuoJonJ9ao');
-  }
-});
-
-client.on('message', message => {
-  if (message.content === 'froggyflopless') {
+  if (message.content.toLowerCase() === 'froggyflopless') {
     message.channel.send('https://youtu.be/sBduX80xUvU?t=25');
   }
 });
 
 client.on('message', message => {
-  if (message.content === 'FroggyFLOPless') {
-    message.channel.send('https://youtu.be/sBduX80xUvU?t=25');
-  }
-});
-
-client.on('message', message => {
-  if (message.content === 'oofing') {
+  if (message.content.toLowerCase() === 'oofing') {
     message.channel.send('OOFING IN MINECRAFT');
   }
 });
 
 client.on('message', message => {
-  if (message.content === 'Oofing') {
+  if (message.content.toLowerCase() === 'oofing in minecraft') {
     message.channel.send('OOFING IN MINECRAFT');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content === 'patreon') {
+  if (msg.content.toLowerCase() === 'ttpatreon') {
     msg.reply(' https://www.patreon.com/trashtripp ');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content === 'Patreon') {
-    msg.reply(' https://www.patreon.com/trashtripp ');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'oof') {
+  if (msg.content.toLowerCase() === 'oof') {
     msg.reply('OOF');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content === 'Rippp') {
+  if (msg.content.toLowerCase() === 'rippp') {
     msg.reply('Take the L');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content === 'RIPPP') {
+  if (msg.content.toLowerCase() === 'ripp') {
     msg.reply('Take the L');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content === 'rippp') {
+  if (msg.content.toLowerCase() === 'rip') {
     msg.reply('Take the L');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content === 'Oof') {
-    msg.reply('OOF');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'OOf') {
-    msg.reply('OOF');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'oOF') {
-    msg.reply('OOF');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'OoF') {
-    msg.reply('OOF');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'Rip') {
-    msg.reply('Take the L');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'rip') {
-    msg.reply('Take the L');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'OOF') {
-    msg.reply('OOF');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'L') {
+  if (msg.content.toLowerCase() === 'l') {
     msg.reply('L');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content === 'l') {
-    msg.reply('L');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'f') {
+  if (msg.content.toLowerCase() === 'f') {
     msg.reply('F');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content === 'F') {
-    msg.reply('F');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'E') {
+  if (msg.content.toLowerCase() === 'e') {
     msg.reply('Z');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content === 'e') {
-    msg.reply('z');
+  if (msg.content.toLowerCase() === 'just') {
+    message.channel.send('Better!');
   }
 });
 
 client.on('message', msg => {
-  if (msg.content === 'just') {
-    msg.reply('better');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'Just') {
-    msg.reply('Better');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'Just Better') {
-    msg.reply('Im Better');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'Just better') {
-    msg.reply('Im Better');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'just better') {
+  if (msg.content.toLowerCase() === 'just better') {
     msg.reply('Im Better');
   }
 });
@@ -206,23 +110,7 @@ client.on('message', msg => {
 client.on('message', msg => {
   if (msg.content === 'SHUT UP') {
     msg.reply('HOW ABOUT YOU? !warn for being TOXIC!');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'Shut Up') {
-    msg.reply('How about you?');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'Shut up') {
-    msg.reply('How about you?');
-  }
-});
-
-client.on('message', msg => {
-  if (msg.content === 'shut up') {
+  }else if (msg.content.toLowerCase() === 'shut up') {
     msg.reply('How about you?');
   }
 });

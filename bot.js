@@ -10,14 +10,14 @@ client.on('ready', () => {
 //Main Commands
 
 //Discord
-  else if (msg.content.toLowerCase() === 'ttdiscord') {
+  if (msg.content.toLowerCase() === 'ttdiscord') {
     msg.reply('https://discord.gg/CrMCfZMwZ2');
   }
 
 //Help Help Help Help Help Help Help Help Help
 client.on('message', msg => {
-  if (msg.content.toLowerCase() === 'tthelp') {
-    msg.reply('Currently got couple custom commands:\n**TTdiscord**, **TThelp**, **TTopenparty**, **TTpatreon**, **TTtwitch**, **TTversion**, **TTyoutube**\n\nWe got multiple message replies which are:\n**E**, **F**, **froggyflopless**, **imagine dragons**, **just**, **L**, **oof**, **rip**, **shut up**, **tt**, and plenty more!\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
+  else if (msg.content.toLowerCase() === 'tthelp') {
+    msg.reply('Currently got couple custom commands:\n**TTdiscord**, **TThelp**, **TTopenparty**, **TTpatreon**, **TTtwitch**, **TTversion**, **TTyoutube**\n\nWe got multiple message replies which are:\n**E**, **F**, **froggyflopless**, **imagine dragons**, **just**, **L**, **open party**, **oof**, **rip**, **shut up**, **tt**, and plenty more!\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
   }else if (msg.content.toLowerCase() === 'tt') {
     msg.reply('Use `TThelp` to see help page!');
   }
@@ -40,7 +40,7 @@ client.on('message', msg => {
   
 //Version Version Version Version Version Version Version Version Version
   else if (msg.content.toLowerCase() === 'ttversion') {
-    msg.channel.send('Currently on Build **v104**!');
+    msg.channel.send('Currently on Build **v105**!');
   }
 //Version Version Version Version Version Version Version Version Version
   
@@ -88,6 +88,21 @@ client.on('message', msg => {
 //L
   else if (msg.content.toLowerCase() === 'l') {
     msg.reply('L');
+  }
+  
+//Open Party
+  else if (msg.content.toLowerCase() === 'do a open party') {
+    msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
+  }else if (msg.content.toLowerCase() === 'do open party') {
+    msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
+  }else if (msg.content.toLowerCase() === 'open party') {
+    msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
+  }else if (msg.content.toLowerCase() === 'do a openparty') {
+    msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
+  }else if (msg.content.toLowerCase() === 'do openparty') {
+    msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
+  }else if (msg.content.toLowerCase() === 'openparty') {
+    msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
   }
   
 //OOF

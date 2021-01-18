@@ -11,11 +11,12 @@ client.on('message', msg => {
 //Main Commands
 //Main Commands
   
-//Discord
-  if (msg.content.toLowerCase() === 'ttdiscord') {
-    msg.reply('https://discord.gg/CrMCfZMwZ2');
+//Version Version Version Version Version Version Version Version Version
+  if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
+    msg.channel.send('Currently on Build **v01.112**!');
   }
-
+//Version Version Version Version Version Version Version Version Version
+  
 //Help Help Help Help Help Help Help Help Help
   else if (msg.content.toLowerCase() === 'tthelp') {
     msg.reply('Currently got couple custom commands:\n**TTdiscord**, **TThelp**, **TTopenparty**, **TTpatreon**, **TTtwitch**, **TTversion**, **TTyoutube**\n\nWe got multiple message replies for you to find and learn!\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
@@ -23,6 +24,11 @@ client.on('message', msg => {
     msg.reply('Use `TThelp` to see help page!');
   }
 //Help Help Help Help Help Help Help Help Help
+  
+//Discord
+  else if (msg.content.toLowerCase() === 'ttdiscord') {
+    msg.reply('https://discord.gg/CrMCfZMwZ2');
+  }
   
 //Open Party
   else if (msg.content.toLowerCase() === 'ttopenparty') {
@@ -38,12 +44,6 @@ client.on('message', msg => {
   else if (msg.content.toLowerCase() === 'tttwitch') {
     msg.reply('https://www.twitch.tv/trashtripp');
   }
-  
-//Version Version Version Version Version Version Version Version Version
-  else if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions') {
-    msg.channel.send('Currently on Build **v01.111**!');
-  }
-//Version Version Version Version Version Version Version Version Version
   
 //YouTube
   else if (msg.content.toLowerCase() === 'ttyoutube') {
@@ -149,6 +149,14 @@ client.on('message', msg => {
   }else if (msg.content.toLowerCase() === 'what does ruo mean') {
     msg.reply('Ruo is a goddess. This video is where She was found https://www.youtube.com/watch?v=9wPzvLsj5G4');
   }
+  
+//Shut Up
+  else if (msg.content === 'sate') {
+    msg.reply('SATE SATE SATE!');
+  }else if (msg.content.toLowerCase() === 'sate sate sate') {
+    msg.channel.send('Now Now Now');
+  }
+});
   
 //Shut Up
   else if (msg.content === 'SHUT UP') {

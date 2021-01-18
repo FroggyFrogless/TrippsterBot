@@ -13,7 +13,7 @@ client.on('message', msg => {
   
 //Version Version Version Version Version Version Version Version Version
   if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
-    msg.channel.send('Currently on Build **v01.112**!');
+    msg.channel.send('Currently on Build **v01.113**!');
   }
 //Version Version Version Version Version Version Version Version Version
   
@@ -156,7 +156,6 @@ client.on('message', msg => {
   }else if (msg.content.toLowerCase() === 'sate sate sate') {
     msg.channel.send('Now Now Now');
   }
-});
   
 //Shut Up
   else if (msg.content === 'SHUT UP') {

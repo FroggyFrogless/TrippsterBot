@@ -13,7 +13,7 @@ client.on('message', msg => {
   
 //Version Version Version Version Version Version Version Version Version
   if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
-    msg.channel.send('Currently on Build **v01.113**!');
+    msg.channel.send('Currently on Build **v01.114**!');
   }
 //Version Version Version Version Version Version Version Version Version
   
@@ -101,11 +101,6 @@ client.on('message', msg => {
     msg.reply('Where did your butt go?');
   }
   
-//Just Better
-  else if (msg.content.toLowerCase() === 'lol') {
-    msg.channel.send('lots of lettuce');
-  }
-  
 //Mai's Sl@ve (Lukinator)
   else if (msg.content.toLowerCase() === 'mai\'s slave') {
     msg.channel.send('<@697871765598109746>');
@@ -150,6 +145,11 @@ client.on('message', msg => {
     msg.reply('Ruo is a goddess. This video is where She was found https://www.youtube.com/watch?v=9wPzvLsj5G4');
   }
   
+//Shrug
+  else if (msg.content.toLowerCase() === 'shrug') {
+    msg.channel.send('¯\\_(ツ)_/¯');
+  }
+  
 //Shut Up
   else if (msg.content === 'sate') {
     msg.reply('SATE SATE SATE!');
@@ -162,6 +162,11 @@ client.on('message', msg => {
     msg.reply('HOW ABOUT YOU? !warn for being TOXIC!');
   }else if (msg.content.toLowerCase() === 'shut up') {
     msg.reply('How about you?');
+  }
+  
+//xD
+  else if (msg.content === 'xd') {
+    msg.reply('Dx');
   }
 });
 

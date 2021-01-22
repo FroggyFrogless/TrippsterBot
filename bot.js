@@ -13,7 +13,7 @@ client.on('message', msg => {
   
 //Version Version Version Version Version Version Version Version Version
   if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
-    msg.channel.send('Currently on Build **v01.11**!');
+    msg.channel.send('Currently on Build **v01.116**!');
   }
 //Version Version Version Version Version Version Version Version Version
   
@@ -74,9 +74,19 @@ client.on('message', msg => {
     msg.reply('F');
   }
   
+//Fortnite
+  else if (msg.content.toLowerCase() === 'fortnite') {
+    msg.channel.send('VALORANT');
+  }
+  
 //FroggyFLOPless
   else if (msg.content.toLowerCase() === 'froggyflopless') {
     msg.channel.send('https://youtu.be/sBduX80xUvU?t=25');
+  }
+  
+//Hai
+  else if (msg.content.toLowerCase() === 'hai') {
+    msg.reply('YES SIR!');
   }
   
 //Hold Up
@@ -155,7 +165,7 @@ client.on('message', msg => {
     msg.channel.send('¯\\_(ツ)_/¯');
   }
   
-//Shut Up
+//SATE
   else if (msg.content === 'sate') {
     msg.reply('SATE SATE SATE!');
   }else if (msg.content.toLowerCase() === 'sate sate sate') {

@@ -13,7 +13,7 @@ client.on('message', msg => {
   
 //Version Version Version Version Version Version Version Version Version
   if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
-    msg.channel.send('Currently on Build **v01.116**!');
+    msg.channel.send('Currently on Build **v01.117**!');
   }
 //Version Version Version Version Version Version Version Version Version
   
@@ -94,7 +94,7 @@ client.on('message', msg => {
     msg.channel.send('What are we waiting for?');
   }
   
-//Just Better
+//I Know
   else if (msg.content.toLowerCase() === 'ik' || msg.content.toLowerCase() === 'i know') {
     msg.reply('But do you REALLY know!');
   }
@@ -177,6 +177,11 @@ client.on('message', msg => {
     msg.reply('HOW ABOUT YOU? !warn for being TOXIC!');
   }else if (msg.content.toLowerCase() === 'shut up') {
     msg.reply('How about you?');
+  }
+  
+//Hold Up
+  else if (msg.content.toLowerCase() === 'welcome') {
+    msg.channel.send('Welcome!');
   }
   
 //xD

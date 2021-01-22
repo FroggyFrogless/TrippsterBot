@@ -13,7 +13,7 @@ client.on('message', msg => {
   
 //Version Version Version Version Version Version Version Version Version
   if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
-    msg.channel.send('Currently on Build **v01.114**!');
+    msg.channel.send('Currently on Build **v01.11**!');
   }
 //Version Version Version Version Version Version Version Version Version
   
@@ -82,6 +82,11 @@ client.on('message', msg => {
 //Hold Up
   else if (msg.content.toLowerCase() === 'hold up') {
     msg.channel.send('What are we waiting for?');
+  }
+  
+//Just Better
+  else if (msg.content.toLowerCase() === 'ik' || msg.content.toLowerCase() === 'i know') {
+    msg.reply('But do you REALLY know!');
   }
   
 //Just Better

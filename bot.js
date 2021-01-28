@@ -13,7 +13,7 @@ client.on('message', msg => {
   
 //Version Version Version Version Version Version Version Version Version
   if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
-    msg.channel.send('Currently on Build **v01.117**!');
+    msg.channel.send('Currently on Build **v01.118**!');
   }
 //Version Version Version Version Version Version Version Version Version
   
@@ -74,6 +74,11 @@ client.on('message', msg => {
     msg.reply('F');
   }
   
+//From
+  else if (msg.content.toLowerCase() === 'where you from' || msg.content.toLowerCase() === 'where are you from' || msg.content.toLowerCase() === 'where you from?' || msg.content.toLowerCase() === 'where are you from?') {
+    msg.reply('Trippster Studios');
+  }
+  
 //Fortnite
   else if (msg.content.toLowerCase() === 'fortnite') {
     msg.channel.send('VALORANT');
@@ -86,7 +91,7 @@ client.on('message', msg => {
   
 //Hai
   else if (msg.content.toLowerCase() === 'hai') {
-    msg.reply('YES SIR!');
+    msg.channel.send('YES SIR!');
   }
   
 //Hold Up
@@ -97,6 +102,11 @@ client.on('message', msg => {
 //I Know
   else if (msg.content.toLowerCase() === 'ik' || msg.content.toLowerCase() === 'i know') {
     msg.reply('But do you REALLY know!');
+  }
+  
+//imposteror
+  else if (msg.content.toLowerCase() === 'imposter' || msg.content.toLowerCase() === 'impostor') {
+    msg.reply('imtoaster');
   }
   
 //Just Better
@@ -114,6 +124,11 @@ client.on('message', msg => {
 //LMAO
   else if (msg.content.toLowerCase() === 'lmao') {
     msg.reply('Where did your butt go?');
+  }
+  
+//Lots of Lettuce
+  else if (msg.content.toLowerCase() === 'lots of lettuce') {
+    msg.reply('lol');
   }
   
 //Mai's Sl@ve (Lukinator)

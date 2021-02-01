@@ -6,7 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  if (msg.content.toLowerCase().charAt(0) === 'a') {
+  if (msg.content.charAt(0).toLowerCase() === 'a') {
     if (msg.content.toLowerCase() === 'aaa') {
     msg.reply('wow you did something');
   }

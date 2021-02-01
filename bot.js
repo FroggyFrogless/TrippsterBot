@@ -3,10 +3,6 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  
-client.user.setActivity('on TrashTripp\'s YouTube Channel')
-  .then(console.log)
-  .catch(console.error);
 });
 
 client.on('message', msg => {

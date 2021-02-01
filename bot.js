@@ -3,6 +3,11 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  
+  // Set the client user's presence
+client.user.setPresence({ activity: { name: 'with discord.js' }, status: 'idle' })
+  .then(console.log)
+  .catch(console.error);
 });
 
 client.on('message', msg => {

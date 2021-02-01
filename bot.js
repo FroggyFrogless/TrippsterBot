@@ -94,7 +94,9 @@ client.on('message', msg => {
       msg.reply('Ruo is a goddess. This video is where She was found https://www.youtube.com/watch?v=9wPzvLsj5G4');
     }
   }else if (msg.content.charAt(0).toLowerCase() === 's') {
-    if (msg.content.toLowerCase() === 'shrug') {
+    if (msg.content.toLowerCase() === 'simp') {
+      msg.channel.send('<@275773134035222531>');
+    }else if (msg.content.toLowerCase() === 'shrug') {
       msg.channel.send('¯\\_(ツ)_/¯');
     }else if (msg.content === 'sate') {
     msg.reply('SATE SATE SATE!');

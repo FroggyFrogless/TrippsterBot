@@ -161,7 +161,6 @@ client.on('message', msg => {
   //}else if (msg.content.charAt(0).toLowerCase() === 'y') {
   }else if (msg.content.charAt(0).toLowerCase() === 'z') {
   }
-  }
 });
 
 // THIS  MUST  BE  THIS  WAY

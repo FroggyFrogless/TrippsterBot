@@ -3,6 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setActivity("TrashTripp's YouTube Channel!", { type: "WATCHING" });
 });
 
 client.on('message', msg => {
@@ -149,6 +150,22 @@ client.on('message', msg => {
     //YouTube
       else if (msg.content.toLowerCase() === 'ttyoutube') {
         msg.reply('https://www.youtube.com/channel/UCumtnW8lcbm9Zdk_83-bXkQ');
+      }
+    
+      else if (msg.content.toLowerCase() === 'ttsay') {
+        msg.delete(0);
+            let msg1 = msg.content.split(" ").slice(1).join(" ");
+            msg1 = msg1
+                .replace(/@everyone/ig, "everyone")
+                .replace(/@here/ig, "here")
+                .replace(/http:/ig, " ")
+                .replace(/https:/ig, " ");
+            if (msg.author.id !== '275773134035222531') {
+                msg.channel.send(`${msg} - ${msg.author}`);
+            }
+            else {
+                msg.channel.send(`${msg}`);
+            }
       }
   //}else if (msg.content.charAt(0).toLowerCase() === 'u') {
   //}else if (msg.content.charAt(0).toLowerCase() === 'v') {

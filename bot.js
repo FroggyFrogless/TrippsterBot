@@ -152,7 +152,8 @@ client.on('message', msg => {
       }
     
       else if (msg.content.toLowerCase() === 'ttsay') {
-        msg.delete(0);
+        msg.delete(0)
+          .catch(console.error);
             let msg1 = msg.content.split(" ").slice(1).join(" ");
             msg1 = msg1
                 .replace(/@everyone/ig, "everyone")

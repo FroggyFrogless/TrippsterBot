@@ -160,10 +160,10 @@ client.on('message', msg => {
                 .replace(/http:/ig, " ")
                 .replace(/https:/ig, " ");
             if (msg.author.id !== '275773134035222531') {
-                msg.channel.send(`${msg} - ${msg.author}`);
+                msg.channel.send(`${msg1} - ${msg.author}`);
             }
             else {
-                msg.channel.send(`${msg}`);
+                msg.channel.send(`${msg1}`);
             }
       }
   //}else if (msg.content.charAt(0).toLowerCase() === 'u') {

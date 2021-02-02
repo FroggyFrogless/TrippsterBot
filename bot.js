@@ -40,7 +40,7 @@ client.on('message', msg => {
     }else if (msg.content.toLowerCase() === 'hai') {
       msg.channel.send('YES SIR!');
     }else if (msg.content.toLowerCase() === 'hey') {
-      msg.reply('Hay is for Horses');
+      msg.reply('Did you know Hay is for Horses!');
     }else if (msg.content.toLowerCase() === 'hold up') {
       msg.channel.send('What are we waiting for?');
     }
@@ -162,7 +162,10 @@ client.on('message', msg => {
     if (msg.content === 'xd') {
       msg.reply('Dx');
     }
-  //}else if (msg.content.charAt(0).toLowerCase() === 'y') {
+  }else if (msg.content.charAt(0).toLowerCase() === 'y') {
+    if (msg.content.toLowerCase() === 'yo') {
+      msg.channel.send('yo yo yo, what’s up dudes (and dudetes)');
+    }
   }else if (msg.content.charAt(0).toLowerCase() === 'z') {
   }
 });

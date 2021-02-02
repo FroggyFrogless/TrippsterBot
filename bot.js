@@ -12,6 +12,8 @@ client.on('message', msg => {
       msg.channel.send('Yup they really are a Bad Boi!');
     }else if (msg.content.toLowerCase() === 'believer' || msg.content.toLowerCase() === 'imagine dragons') {
       msg.channel.send('https://youtu.be/nMuoJonJ9ao');
+    }else if (msg.content.toLowerCase() === 'brb') {
+      msg.reply('Make sure you bring a pizza back!');
     }
   //}else if (msg.content.charAt(0).toLowerCase() === 'c') {
   //}else if (msg.content.charAt(0).toLowerCase() === 'd') {

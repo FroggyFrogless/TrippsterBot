@@ -3,9 +3,8 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setActivity('TrashTripp\'s YouTube Channel!', { type: 'WATCHING' });
 });
-
-client.user.setActivity('TrashTripp\'s YouTube Channel!', { type: 'WATCHING' });
 
 client.on('message', msg => {
   if (msg.content.charAt(0).toLowerCase() === 'a') {

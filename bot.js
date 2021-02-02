@@ -97,7 +97,7 @@ client.on('message', msg => {
     }
   }else if (msg.content.charAt(0).toLowerCase() === 's') {
     if (msg.content.toLowerCase() === 'simp') {
-      msg.channel.send('<@275773134035222531>');
+      msg.channel.send('<@275773134035222531> is a SIMP!');
     }else if (msg.content.toLowerCase() === 'shrug') {
       msg.channel.send('¯\\_(ツ)_/¯');
     }else if (msg.content === 'sate') {

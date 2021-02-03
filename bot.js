@@ -41,6 +41,8 @@ client.on('message', msg => {
       msg.channel.send('YES SIR!');
     }else if (msg.content.toLowerCase() === 'hey') {
       msg.reply('Did you know Hay is for Horses!');
+    }else if (msg.content.toLowerCase() === 'hey hey hey') {
+      msg.channel.send('Hey Hey Hey, What’s up Dudes (and Dudetes), it\'s Trippster!');
     }else if (msg.content.toLowerCase() === 'hold up') {
       msg.channel.send('What are we waiting for?');
     }
@@ -163,7 +165,7 @@ client.on('message', msg => {
       msg.reply('Dx');
     }
   }else if (msg.content.charAt(0).toLowerCase() === 'y') {
-    if (msg.content.toLowerCase() === 'yo') {
+    if (msg.content.toLowerCase() === 'yo yo yo') {
       msg.channel.send('yo yo yo, what’s up dudes (and dudetes)');
     }
   }else if (msg.content.charAt(0).toLowerCase() === 'z') {

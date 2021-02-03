@@ -15,19 +15,23 @@ client.on('message', msg => {
     }else if (msg.content.toLowerCase() === 'brb') {
       msg.reply('Make sure you bring a pizza back!');
     }
-  //}else if (msg.content.charAt(0).toLowerCase() === 'c') {
-  //}else if (msg.content.charAt(0).toLowerCase() === 'd') {
+  }else if (msg.content.charAt(0).toLowerCase() === 'c') {
+    if (msg.content.toLowerCase() === 'corrupt footage') {
+      msg.reply('https://youtu.be/bGblNvKRYro');
+    }
+  }else if (msg.content.charAt(0).toLowerCase() === 'd') {
+    if (msg.content.toLowerCase() === 'do a open party' || msg.content.toLowerCase() === 'do open party' || msg.content.toLowerCase() === 'do a openparty' || msg.content.toLowerCase() === 'do openparty') {
+      msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
+    }
   }else if (msg.content.charAt(0).toLowerCase() === 'e') {
-    if (msg.content.toLowerCase() === 'e') {
+    if (msg.content === 'E') {
       msg.channel.send('Z');
     }else if (msg.content.toLowerCase() === 'ez') {
       msg.reply('Sure it is easy');
     }
   }else if (msg.content.charAt(0).toLowerCase() === 'f') {
-    if (msg.content.toLowerCase() === 'f') {
+    if (msg.content === 'F') {
       msg.reply('F');
-    }else if (msg.content.toLowerCase() === 'where you from' || msg.content.toLowerCase() === 'where are you from' || msg.content.toLowerCase() === 'where you from?' || msg.content.toLowerCase() === 'where are you from?') {
-      msg.reply('Trippster Studios');
     }else if (msg.content.toLowerCase() === 'fortnite') {
       msg.channel.send('VALORANT');
     }else if (msg.content.toLowerCase() === 'froggyflopless') {
@@ -60,7 +64,7 @@ client.on('message', msg => {
     }
   //}else if (msg.content.charAt(0).toLowerCase() === 'k') {
   }else if (msg.content.charAt(0).toLowerCase() === 'l') {
-    if (msg.content.toLowerCase() === 'l') {
+    if (msg.content === 'L') {
       msg.reply('L');
     }else if (msg.content.toLowerCase() === 'lmao') {
       msg.reply('Where did your butt go?');
@@ -70,12 +74,12 @@ client.on('message', msg => {
   }else if (msg.content.charAt(0).toLowerCase() === 'm') {
     if (msg.content.toLowerCase() === 'mai\'s slave') {
       msg.channel.send('<@697871765598109746>');
-    }else if (msg.content.toLowerCase() === 'missing footage' || msg.content.toLowerCase() === 'corrupt footage') {
+    }else if (msg.content.toLowerCase() === 'missing footage') {
       msg.reply('https://youtu.be/bGblNvKRYro');
     }
   //}else if (msg.content.charAt(0).toLowerCase() === 'n') {
   }else if (msg.content.charAt(0).toLowerCase() === 'o') {
-    if (msg.content.toLowerCase() === 'do a open party' || msg.content.toLowerCase() === 'do open party' || msg.content.toLowerCase() === 'open party' || msg.content.toLowerCase() === 'do a openparty' || msg.content.toLowerCase() === 'do openparty' || msg.content.toLowerCase() === 'openparty') {
+    if (msg.content.toLowerCase() === msg.content.toLowerCase() === 'open party' || msg.content.toLowerCase() === 'openparty') {
       msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
     }else if (msg.content.toLowerCase() === 'oof') {
       msg.reply('OOF');
@@ -85,6 +89,8 @@ client.on('message', msg => {
   }else if (msg.content.charAt(0).toLowerCase() === 'p') {
     if (msg.content.toLowerCase() === 'pudding') {
       msg.channel.send('Who can resist pudding?');
+    }else if (msg.content.toLowerCase() === 'praise ruo') {
+      msg.reply('Don\'t forget about you\'re daily praise to the Goddess Ruo');
     }
   //}else if (msg.content.charAt(0).toLowerCase() === 'q') {
   }else if (msg.content.charAt(0).toLowerCase() === 'r') {
@@ -92,17 +98,13 @@ client.on('message', msg => {
       msg.reply('Take the L');
     }else if (msg.content.toLowerCase() === 'ruo') {
       msg.reply('RUO');
-    }else if (msg.content.toLowerCase() === 'praise ruo') {
-      msg.reply('Don\'t forget about you\'re daily praise to the Goddess Ruo');
-    }else if (msg.content.toLowerCase() === 'what does ruo mean') {
-      msg.reply('Ruo is a goddess. This video is where She was found https://www.youtube.com/watch?v=9wPzvLsj5G4');
     }
   }else if (msg.content.charAt(0).toLowerCase() === 's') {
     if (msg.content.toLowerCase() === 'simp') {
       msg.channel.send('<@275773134035222531> is a SIMP!');
     }else if (msg.content.toLowerCase() === 'shrug') {
       msg.channel.send('¯\\_(ツ)_/¯');
-    }else if (msg.content === 'sate') {
+    }else if (msg.content.toLowerCase() === 'sate') {
     msg.reply('SATE SATE SATE!');
     }else if (msg.content.toLowerCase() === 'sate sate sate') {
       msg.channel.send('Now Now Now');
@@ -118,7 +120,7 @@ client.on('message', msg => {
 
     //Version Version Version Version Version Version Version Version Version
       if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
-        msg.channel.send('Currently on Build **v01.500**!');
+        msg.channel.send('Currently on Build **v01.501**!');
       }
     //Version Version Version Version Version Version Version Version Version
 
@@ -159,6 +161,10 @@ client.on('message', msg => {
   }else if (msg.content.charAt(0).toLowerCase() === 'w') {
     if (msg.content.toLowerCase() === 'welcome') {
       msg.channel.send('Welcome!');
+    }else if (msg.content.toLowerCase() === 'what does ruo mean') {
+      msg.reply('Ruo is a goddess. This video is where She was found https://www.youtube.com/watch?v=9wPzvLsj5G4');
+    }else if (msg.content.toLowerCase() === 'where you from' || msg.content.toLowerCase() === 'where are you from' || msg.content.toLowerCase() === 'where you from?' || msg.content.toLowerCase() === 'where are you from?') {
+      msg.reply('Trippster Studios');
     }
   }else if (msg.content.charAt(0).toLowerCase() === 'x') {
     if (msg.content === 'xd') {
@@ -169,6 +175,9 @@ client.on('message', msg => {
       msg.channel.send('yo yo yo, what’s up dudes (and dudetes)');
     }
   }else if (msg.content.charAt(0).toLowerCase() === 'z') {
+    if (msg.content.toLowerCase() === 'zzz') {
+       msg.reply('wake UP!');
+    }
   }
 });
 

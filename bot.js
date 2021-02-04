@@ -119,13 +119,21 @@ client.on('message', msg => {
     //Main Commands
     //Main Commands
     //Main Commands
-let specialRole = msg.guild.roles.find("Trippster -> BOT Special!", "Trippster -> BOT Special!");
+    const Eval = require("eval");
     //Version Version Version Version Version Version Version Version Version
       if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
         msg.channel.send('Currently on Build **v01.502**!');
       }
     //Version Version Version Version Version Version Version Version Version
-
+    
+      else if (msg.content.toLowerCase() === 'tteval') {
+        if (msg.author.id !== '275773134035222531')
+            return;
+        const args1 = msg.content.split(" ").slice(1).join(" ");
+        let evaled = Eval(args1);
+        msg.channel.send(evaled);
+      }
+    
     //Help Help Help Help Help Help Help Help Help
       else if (msg.content.toLowerCase() === 'tthelp') {
         msg.reply('Currently got couple custom commands:\n**TTdiscord**, **TThelp**, **TTfunfact**, **TTopenparty**, **TTpatreon**, **TTtwitch**, **TTversion**, **TTyoutube**\n\nWe got multiple message replies for you to find and learn!\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
@@ -151,9 +159,9 @@ let specialRole = msg.guild.roles.find("Trippster -> BOT Special!", "Trippster -
       }
     
     //Invite
-      else if (msg.content.toLowerCase() === 'ttinvite' && msg.member.roles.has(specialRole.id)) {
-        msg.author.send('https://discord.com/api/oauth2/authorize?client_id=450445910548283434&permissions=8&scope=bot');
-      }
+      //else if (msg.content.toLowerCase() === 'ttinvite') {
+        //msg.author.send('https://discord.com/api/oauth2/authorize?client_id=450445910548283434&permissions=8&scope=bot');
+      //}
 
     //Open Party
       else if (msg.content.toLowerCase() === 'ttopenparty') {

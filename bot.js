@@ -187,7 +187,7 @@ client.on('message', msg => {
       }
     
     //Say
-      else if (msg.content.toLowerCase() === 'ttsay') {
+      else if (msg.content.toLowerCase().split(" ")[0].replace('ttsay', "")) {
         msg.delete(0)
             let msg1 = msg.content.split(" ").slice(1).join(" ");
             msg1 = msg1

@@ -18,6 +18,8 @@ client.on('message', msg => {
   }else if (msg.content.charAt(0).toLowerCase() === 'c') {
     if (msg.content.toLowerCase() === 'corrupt footage') {
       msg.reply('https://youtu.be/bGblNvKRYro');
+    }else if (msg.content.toLowerCase() === 'composttripp' || msg.content.toLowerCase() === 'compost') {
+      msg.reply('https://www.youtube.com/channel/UCR1O2wEP28cDM124yiT7jsg');
     }
   }else if (msg.content.charAt(0).toLowerCase() === 'd') {
     if (msg.content.toLowerCase() === 'do a open party' || msg.content.toLowerCase() === 'do open party' || msg.content.toLowerCase() === 'do a openparty' || msg.content.toLowerCase() === 'do openparty') {
@@ -96,7 +98,9 @@ client.on('message', msg => {
     }
   //}else if (msg.content.charAt(0).toLowerCase() === 'q') {
   }else if (msg.content.charAt(0).toLowerCase() === 'r') {
-    if (msg.content.toLowerCase() === 'rip' || msg.content.toLowerCase() === 'ripp' || msg.content.toLowerCase() === 'rippp') {
+    if (msg.content.toLowerCase() === 'recycledtripp' || msg.content.toLowerCase() === 'recycled') {
+      msg.reply('https://www.youtube.com/channel/UC6YhSn5SH_UKrfoeH9DemgQ');
+    }else if (msg.content.toLowerCase() === 'rip' || msg.content.toLowerCase() === 'ripp' || msg.content.toLowerCase() === 'rippp') {
       msg.reply('Take the L');
     }else if (msg.content.toLowerCase() === 'ruo') {
       msg.reply('RUO');

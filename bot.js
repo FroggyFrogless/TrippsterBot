@@ -119,7 +119,6 @@ client.on('message', msg => {
     //Main Commands
     //Main Commands
     //Main Commands
-    const Eval = require("eval");
     //Version Version Version Version Version Version Version Version Version
       if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
         msg.channel.send('Currently on Build **v01.502**!');
@@ -127,11 +126,15 @@ client.on('message', msg => {
     //Version Version Version Version Version Version Version Version Version
     
       else if (msg.content.toLowerCase() === 'tteval') {
-        if (msg.author.id !== '275773134035222531')
-            return;
-        const args1 = msg.content.split(" ").slice(1).join(" ");
-        let evaled = Eval(args1);
-        msg.channel.send(evaled);
+        if (msg.author.id !== '275773134035222531') {
+                msg.channel.send(`${msg.author}... You really think you can run Eval!`);
+                return;
+            };
+            const args1 = msg.content.split(" ").slice(1).join(" ");
+            let evaled = eval(args1);
+            typeof evaled !== String
+                .toString();
+            msg.channel.send(evaled);
       }
     
     //Help Help Help Help Help Help Help Help Help

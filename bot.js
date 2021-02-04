@@ -151,7 +151,8 @@ client.on('message', msg => {
       }
     
     //Invite
-      else if (msg.content.toLowerCase() === 'ttinvite') {
+      let specialRole = msg.guild.roles.find("Trippster -> BOT Special!", "Trippster -> BOT Special!");
+      else if (msg.content.toLowerCase() === 'ttinvite' && msg.member.roles.has(specialRole.id)) {
         msg.author.send('https://discord.com/api/oauth2/authorize?client_id=450445910548283434&permissions=8&scope=bot');
       }
 

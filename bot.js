@@ -6,6 +6,7 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
+  let specialRole = msg.guild.roles.find("Trippster -> BOT Special!", "Trippster -> BOT Special!");
   if (msg.content.charAt(0).toLowerCase() === 'a') {
   }else if (msg.content.charAt(0).toLowerCase() === 'b') {
     if (msg.content.toLowerCase() === 'bad boi') {
@@ -151,7 +152,6 @@ client.on('message', msg => {
       }
     
     //Invite
-      let specialRole = msg.guild.roles.find("Trippster -> BOT Special!", "Trippster -> BOT Special!");
       else if (msg.content.toLowerCase() === 'ttinvite' && msg.member.roles.has(specialRole.id)) {
         msg.author.send('https://discord.com/api/oauth2/authorize?client_id=450445910548283434&permissions=8&scope=bot');
       }

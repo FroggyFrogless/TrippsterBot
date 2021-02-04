@@ -141,7 +141,18 @@ client.on('message', msg => {
     
     //FunFact
       else if (msg.content.toLowerCase() === 'ttfunfact') {
-        msg.reply('Froggy has a grand total of 0 knife kills!');
+        var funfacts = [
+            'Froggy has a grand total of 0 Knife Kills!',
+            'TrashTripp reached 1,000 Subscribers on January 28, 2021!',
+        ];
+        var funfactsOne = Math.floor(Math.random() * (funfacts.length));
+        var funfactsFinal = funfacts[funfactsOne];
+        msg.reply(`${funfactsFinal}`);
+      }
+    
+    //Invite
+      else if (msg.content.toLowerCase() === 'ttinvite') {
+        msg.author.send('https://discord.com/api/oauth2/authorize?client_id=450445910548283434&permissions=8&scope=bot');
       }
 
     //Open Party

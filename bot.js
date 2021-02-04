@@ -140,7 +140,7 @@ let specialRole = msg.guild.roles.find("Trippster -> BOT Special!", "Trippster -
       }
     
     //FunFact
-      else if (msg.content.toLowerCase() === 'ttfunfact') || msg.content.toLowerCase() === 'ttfunfacts' {
+      else if (msg.content.toLowerCase() === 'ttfunfact' || msg.content.toLowerCase() === 'ttfunfacts') {
         var funfacts = [
             'Froggy has a grand total of 0 Knife Kills!',
             'TrashTripp reached 1,000 Subscribers on January 28, 2021!',

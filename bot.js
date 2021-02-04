@@ -24,13 +24,13 @@ client.on('message', msg => {
       msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
     }
   }else if (msg.content.charAt(0).toLowerCase() === 'e') {
-    if (msg.content === 'E') {
-      msg.channel.send('Z');
-    }else if (msg.content.toLowerCase() === 'ez') {
+    if (msg.content.toLowerCase() === 'eassy') {
+      msg.reply('CAN I TAKE IT SO I GET BIGGER IQ!');
+    }else if (msg.content.toLowerCase() === 'ez' || msg.content.toLowerCase() === 'easy') {
       msg.reply('Sure it is easy');
     }
   }else if (msg.content.charAt(0).toLowerCase() === 'f') {
-    if(msg.content === 'f in the chat') {
+    if(msg.content.toLowerCase() === 'f in the chat') {
       msg.reply('F');
     }else if (msg.content.toLowerCase() === 'fortnite') {
       msg.channel.send('VALORANT');
@@ -125,7 +125,21 @@ client.on('message', msg => {
       }
     //Version Version Version Version Version Version Version Version Version
     
-      else if (msg.content.toLowerCase() === 'tteval') {
+    //Help Help Help Help Help Help Help Help Help
+      else if (msg.content.toLowerCase() === 'tthelp') {
+        msg.reply('Currently got couple custom commands:\n**TTdiscord**, **TThelp**, **TTfunfact**, **TTopenparty**, **TTpatreon**, **TTsay**, **TTtwitch**, **TTversion**, **TTyoutube**\n\nWe got multiple message replies for you to find and learn!\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
+      }else if (msg.content.toLowerCase() === 'tt') {
+        msg.reply('Use `TThelp` to see help page!');
+      }
+    //Help Help Help Help Help Help Help Help Help
+
+    //Discord
+      else if (msg.content.toLowerCase() === 'ttdiscord') {
+        msg.reply('https://discord.gg/CrMCfZMwZ2');
+      }
+    
+    //Eval
+    else if (msg.content.includes('tteval')) {
         if (msg.author.id !== '275773134035222531') {
                 msg.channel.send(`${msg.author}... You really think you can run Eval!`);
                 return;
@@ -135,19 +149,6 @@ client.on('message', msg => {
             typeof evaled !== String
                 .toString();
             msg.channel.send(evaled);
-      }
-    
-    //Help Help Help Help Help Help Help Help Help
-      else if (msg.content.toLowerCase() === 'tthelp') {
-        msg.reply('Currently got couple custom commands:\n**TTdiscord**, **TThelp**, **TTfunfact**, **TTopenparty**, **TTpatreon**, **TTtwitch**, **TTversion**, **TTyoutube**\n\nWe got multiple message replies for you to find and learn!\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
-      }else if (msg.content.toLowerCase() === 'tt') {
-        msg.reply('Use `TThelp` to see help page!');
-      }
-    //Help Help Help Help Help Help Help Help Help
-
-    //Discord
-      else if (msg.content.toLowerCase() === 'ttdiscord') {
-        msg.reply('https://discord.gg/CrMCfZMwZ2');
       }
     
     //FunFact
@@ -175,16 +176,6 @@ client.on('message', msg => {
       else if (msg.content.toLowerCase() === 'ttpatreon') {
         msg.reply('head over to <#765672137817063475> for more information or just click <https://www.patreon.com/trashtripp>!');
       }
-
-    //Twitch
-      else if (msg.content.toLowerCase() === 'tttwitch') {
-        msg.reply('https://www.twitch.tv/trashtripp');
-      }
-
-    //YouTube
-      else if (msg.content.toLowerCase() === 'ttyoutube') {
-        msg.reply('https://www.youtube.com/channel/UCumtnW8lcbm9Zdk_83-bXkQ');
-      }
     
     //Say
       else if (msg.content.includes('ttsay')) {
@@ -208,6 +199,16 @@ client.on('message', msg => {
             else {
                 msg.channel.send(`${msg1}`);
             }
+      }
+
+    //Twitch
+      else if (msg.content.toLowerCase() === 'tttwitch') {
+        msg.reply('https://www.twitch.tv/trashtripp');
+      }
+
+    //YouTube
+      else if (msg.content.toLowerCase() === 'ttyoutube') {
+        msg.reply('https://www.youtube.com/channel/UCumtnW8lcbm9Zdk_83-bXkQ');
       }
   //}else if (msg.content.charAt(0).toLowerCase() === 'u') {
   //}else if (msg.content.charAt(0).toLowerCase() === 'v') {

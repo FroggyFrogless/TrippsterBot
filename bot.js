@@ -6,7 +6,6 @@ client.on('ready', () => {
 });
 
 client.on('message', msg => {
-  let specialRole = msg.guild.roles.find("Trippster -> BOT Special!", "Trippster -> BOT Special!");
   if (msg.content.charAt(0).toLowerCase() === 'a') {
   }else if (msg.content.charAt(0).toLowerCase() === 'b') {
     if (msg.content.toLowerCase() === 'bad boi') {
@@ -120,7 +119,7 @@ client.on('message', msg => {
     //Main Commands
     //Main Commands
     //Main Commands
-
+let specialRole = msg.guild.roles.find("Trippster -> BOT Special!", "Trippster -> BOT Special!");
     //Version Version Version Version Version Version Version Version Version
       if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
         msg.channel.send('Currently on Build **v01.502**!');
@@ -141,7 +140,7 @@ client.on('message', msg => {
       }
     
     //FunFact
-      else if (msg.content.toLowerCase() === 'ttfunfact') {
+      else if (msg.content.toLowerCase() === 'ttfunfact') || msg.content.toLowerCase() === 'ttfunfacts' {
         var funfacts = [
             'Froggy has a grand total of 0 Knife Kills!',
             'TrashTripp reached 1,000 Subscribers on January 28, 2021!',

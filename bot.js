@@ -10,7 +10,7 @@ client.on('message', msg => {
   }else if (msg.content.charAt(0).toLowerCase() === 'b') {
     if (msg.content.toLowerCase() === 'bad boi') {
       msg.channel.send('Yup they really are a Bad Boi!');
-    }else if (msg.content.toLowerCase() === 'believer' || msg.content.toLowerCase() === 'imagine dragons') {
+    }else if (msg.content.toLowerCase() === 'believer') {
       msg.channel.send('https://youtu.be/nMuoJonJ9ao');
     }else if (msg.content.toLowerCase() === 'brb') {
       msg.reply('Make sure you bring a pizza back!');
@@ -30,7 +30,7 @@ client.on('message', msg => {
       msg.reply('Sure it is easy');
     }
   }else if (msg.content.charAt(0).toLowerCase() === 'f') {
-    if (msg.content === 'F') {
+    if(msg.content === 'f in the chat') {
       msg.reply('F');
     }else if (msg.content.toLowerCase() === 'fortnite') {
       msg.channel.send('VALORANT');
@@ -55,6 +55,8 @@ client.on('message', msg => {
       msg.reply('But do you REALLY know!');
     }else if (msg.content.toLowerCase() === 'imposter' || msg.content.toLowerCase() === 'impostor') {
       msg.reply('imtoaster');
+    }else if (msg.content.toLowerCase() === 'imagine dragons') {
+      msg.channel.send('https://youtu.be/nMuoJonJ9ao');
     }
   }else if (msg.content.charAt(0).toLowerCase() === 'j') {
     if (msg.content.toLowerCase() === 'just') {
@@ -81,7 +83,7 @@ client.on('message', msg => {
   }else if (msg.content.charAt(0).toLowerCase() === 'o') {
     if (msg.content.toLowerCase() === msg.content.toLowerCase() === 'open party' || msg.content.toLowerCase() === 'openparty') {
       msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
-    }else if (msg.content.toLowerCase() === 'oof') {
+    }else if (msg.content.toLowerCase() === 'oof' || msg.content.toLowerCase() === '00f' || msg.content.toLowerCase() === '0of' || msg.content.toLowerCase() === 'o0f') {
       msg.reply('OOF');
     }else if (msg.content.toLowerCase() === 'oofing in minecraft' || msg.content.toLowerCase() === 'oofing') {
       msg.reply('OOFING IN MINECRAFT');
@@ -107,7 +109,7 @@ client.on('message', msg => {
     }else if (msg.content.toLowerCase() === 'sate') {
     msg.reply('SATE SATE SATE!');
     }else if (msg.content.toLowerCase() === 'sate sate sate') {
-      msg.channel.send('Now Now Now');
+      msg.channel.send('Well Well Well');
     }else if (msg.content === 'SHUT UP') {
       msg.reply('HOW ABOUT YOU? !warn for being TOXIC!');
     }else if (msg.content.toLowerCase() === 'shut up') {
@@ -120,13 +122,13 @@ client.on('message', msg => {
 
     //Version Version Version Version Version Version Version Version Version
       if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
-        msg.channel.send('Currently on Build **v01.501**!');
+        msg.channel.send('Currently on Build **v01.502**!');
       }
     //Version Version Version Version Version Version Version Version Version
 
     //Help Help Help Help Help Help Help Help Help
       else if (msg.content.toLowerCase() === 'tthelp') {
-        msg.reply('Currently got couple custom commands:\n**TTdiscord**, **TThelp**, **TTopenparty**, **TTpatreon**, **TTtwitch**, **TTversion**, **TTyoutube**\n\nWe got multiple message replies for you to find and learn!\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
+        msg.reply('Currently got couple custom commands:\n**TTdiscord**, **TThelp**, **TTfunfact**, **TTopenparty**, **TTpatreon**, **TTtwitch**, **TTversion**, **TTyoutube**\n\nWe got multiple message replies for you to find and learn!\n\n*If got any suggestions head over to* <#799822257537941604> *to suggest!*');
       }else if (msg.content.toLowerCase() === 'tt') {
         msg.reply('Use `TThelp` to see help page!');
       }
@@ -135,6 +137,11 @@ client.on('message', msg => {
     //Discord
       else if (msg.content.toLowerCase() === 'ttdiscord') {
         msg.reply('https://discord.gg/CrMCfZMwZ2');
+      }
+    
+    //FunFact
+      else if (msg.content.toLowerCase() === 'ttfunfact') {
+        msg.reply('Froggy has a grand total of 0 knife kills!');
       }
 
     //Open Party
@@ -161,7 +168,7 @@ client.on('message', msg => {
   }else if (msg.content.charAt(0).toLowerCase() === 'w') {
     if (msg.content.toLowerCase() === 'welcome') {
       msg.channel.send('Welcome!');
-    }else if (msg.content.toLowerCase() === 'what does ruo mean') {
+    }else if (msg.content.toLowerCase() === 'what does ruo mean' || msg.content.toLowerCase() === 'what is ruo') {
       msg.reply('Ruo is a goddess. This video is where She was found https://www.youtube.com/watch?v=9wPzvLsj5G4');
     }else if (msg.content.toLowerCase() === 'where you from' || msg.content.toLowerCase() === 'where are you from' || msg.content.toLowerCase() === 'where you from?' || msg.content.toLowerCase() === 'where are you from?') {
       msg.reply('Trippster Studios');

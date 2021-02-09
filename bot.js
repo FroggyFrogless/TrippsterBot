@@ -83,7 +83,7 @@ client.on('message', msg => {
     }
   //}else if (msg.content.charAt(0).toLowerCase() === 'n') {
   }else if (msg.content.charAt(0).toLowerCase() === 'o') {
-    if (msg.content.toLowerCase() === msg.content.toLowerCase() === 'open party' || msg.content.toLowerCase() === 'openparty') {
+    if (msg.content.toLowerCase() === 'open party' || msg.content.toLowerCase() === 'openparty') {
       msg.channel.send('I agree, <@493182173826777098> do an open party soon!');
     }else if (msg.content.toLowerCase() === 'oof' || msg.content.toLowerCase() === '00f' || msg.content.toLowerCase() === '0of' || msg.content.toLowerCase() === 'o0f') {
       msg.reply('OOF');

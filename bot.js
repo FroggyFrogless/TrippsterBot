@@ -125,7 +125,7 @@ client.on('message', msg => {
     //Main Commands
     //Version Version Version Version Version Version Version Version Version
       if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
-        msg.channel.send('Currently on Build **v01.502**!');
+        msg.channel.send('Currently on Build **v01.503**!');
       }
     //Version Version Version Version Version Version Version Version Version
     

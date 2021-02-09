@@ -33,7 +33,7 @@ client.on('message', msg => {
     }
   }else if (msg.content.charAt(0).toLowerCase() === 'f') {
     if(msg.content.toLowerCase() === 'f in the chat') {
-      msg.reply('F');
+      msg.channel.send('F');
     }else if (msg.content.toLowerCase() === 'fortnite') {
       msg.channel.send('VALORANT');
     }else if (msg.content.toLowerCase() === 'froggyflopless') {
@@ -182,14 +182,19 @@ client.on('message', msg => {
       }
     
     //Say
-      else if (msg.content.includes('ttsay')) {
+      else if (msg.content.toLowerCase().includes('ttsay')) {
         msg.delete(0)
             let msg1 = msg.content.split(" ").slice(1).join(" ");
-            msg1 = msg1
-                .replace(/@everyone/ig, "everyone")
-                .replace(/@here/ig, "here")
-                .replace(/http:/ig, " ")
-                .replace(/https:/ig, " ");
+        
+            if (msg.author.id !== '275773134035222531') {    
+                msg1 = msg1
+                    .replace(/@everyone/ig, "everyone")
+                    .replace(/@here/ig, "here")
+                    .replace(/http:/ig, " ")
+                    .replace(/https:/ig, " ");
+            }else{
+              msg1 = msg1;
+            }
             if (msg.content.toLowerCase().split(" ").slice(1).length < 1) {
                 msg.channel.send(`Whoops ${msg.author}, but what do you want me to say?`)
                     .then(msg1 => {

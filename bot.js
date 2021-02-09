@@ -153,6 +153,7 @@ client.on('message', msg => {
             typeof evaled !== String
                 .toString();
             msg.channel.send(evaled);
+            msg.channel.send('Done');
       }
     
     //FunFact

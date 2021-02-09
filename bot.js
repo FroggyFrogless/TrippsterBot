@@ -3,6 +3,7 @@ const client = new Discord.Client();
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setPresence({game:{ name: 'with TrashTripp on YouTube' , type: "WATCHING", url: "https://www.youtube.com/c/TrashTripp/" }})
 });
 
 client.on('message', msg => {
@@ -159,8 +160,13 @@ client.on('message', msg => {
     //FunFact
       else if (msg.content.toLowerCase() === 'ttfunfact' || msg.content.toLowerCase() === 'ttfunfacts') {
         var funfacts = [
-            'Froggy has a grand total of 0 Knife Kills!',
-            'TrashTripp reached 1,000 Subscribers on January 28, 2021!',
+            'FunFact #1: Froggy has a grand total of 0 Knife Kills!',
+            'FunFact #2: TrashTripp reached 1,000 Subscribers on January 28, 2021!',
+            'FunFact #3: TrashTripp has 2 Knife Aces!',
+            'FunFact #4: Tripp and Froggy met because of a Minecraft giveaway in 2017!',
+            'FunFact #5: Froggy is 15 years old!',
+            'FunFact #6: Tripp has edited all of his videos, however froggy has made one of his thumbnails! Can you find what one?',
+            'FunFact #7: The font for Tripp’s subtitles is Digitalt!',
         ];
         var funfactsOne = Math.floor(Math.random() * (funfacts.length));
         var funfactsFinal = funfacts[funfactsOne];

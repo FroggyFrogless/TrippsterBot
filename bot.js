@@ -167,6 +167,9 @@ client.on('message', msg => {
             'FunFact #5: Froggy is 15 years old!',
             'FunFact #6: Tripp has edited all of his videos, however froggy has made one of his thumbnails! Can you find what one?',
             'FunFact #7: The font for Tripp’s subtitles is Digitalt!',
+            'FunFact #8: Tripp has a total of 9 YouTube channels, 7 of which have at least 1 video on them. However, only 3 of them have more than three videos on them!',
+            'FunFact #9: Froggy has a total of 18 YouTube channels, 8 of which have at least 1 video on them. However, only 4 of them have more than three videos on them!',
+            'FunFact #10: Tripp loves to play Smash Bros, in Smash Ultimate he mains Bowser and Wario. In Melee he mains Puff and Falco!',
         ];
         var funfactsOne = Math.floor(Math.random() * (funfacts.length));
         var funfactsFinal = funfacts[funfactsOne];

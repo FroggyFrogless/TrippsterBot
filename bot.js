@@ -170,6 +170,7 @@ client.on('message', msg => {
             'FunFact #8: Tripp has a total of 9 YouTube channels, 7 of which have at least 1 video on them. However, only 3 of them have more than three videos on them!',
             'FunFact #9: Froggy has a total of 18 YouTube channels, 8 of which have at least 1 video on them. However, only 5 of them have more than three videos on them!',
             'FunFact #10: Tripp loves to play Smash Bros, in Smash Ultimate he mains Bowser and Wario. In Melee he mains Puff and Falco!',
+            'FunFact #11: Powerade Ultra Citrus Blast is worst drink ever! After Froggy drinking it <https://clips.twitch.tv/CharmingEnchantingBeanBabyRage>.',
         ];
         var funfactsOne = Math.floor(Math.random() * (funfacts.length));
         var funfactsFinal = funfacts[funfactsOne];

@@ -233,7 +233,9 @@ client.on('message', msg => {
   //}else if (msg.content.charAt(0).toLowerCase() === 'u') {
   //}else if (msg.content.charAt(0).toLowerCase() === 'v') {
   }else if (msg.content.charAt(0).toLowerCase() === 'w') {
-    if (msg.content.toLowerCase() === 'welcome') {
+    if (msg.content.toLowerCase() === 'weeb') {
+      msg.channel.send('<@275773134035222531> is a WEEB!');
+    }else if (msg.content.toLowerCase() === 'welcome') {
       msg.channel.send('Welcome!');
     }else if (msg.content.toLowerCase() === 'what does ruo mean' || msg.content.toLowerCase() === 'what is ruo') {
       msg.reply('Ruo is a goddess. This video is where She was found https://www.youtube.com/watch?v=9wPzvLsj5G4');

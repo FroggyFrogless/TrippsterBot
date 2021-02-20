@@ -121,12 +121,15 @@ client.on('message', msg => {
       msg.reply('How about you?');
     }
   }else if (msg.content.charAt(0).toLowerCase() === 't') {
+    if (msg.content.toLowerCase() === 'the anime list') {
+      msg.reply('https://docs.google.com/document/d/1_CjGfUE8dwTdil9Q7kWLj1aFyH4sBQi_XU8_yczU2_Q/edit');
+    }
     //Main Commands
     //Main Commands
     //Main Commands
     //Version Version Version Version Version Version Version Version Version
-      if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
-        msg.channel.send('Currently on Build **v01.503**!');
+      else if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
+        msg.channel.send('Currently on Build **v01.504**!');
       }
     //Version Version Version Version Version Version Version Version Version
     

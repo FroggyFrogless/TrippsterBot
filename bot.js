@@ -67,7 +67,10 @@ client.on('message', msg => {
     }else if (msg.content.toLowerCase() === 'just better') {
       msg.reply('Im Better');
     }
-  //}else if (msg.content.charAt(0).toLowerCase() === 'k') {
+  }else if (msg.content.charAt(0).toLowerCase() === 'k') {
+    if (msg.content.toLowerCase() === 'knife op') {
+      msg.channel.send('https://youtu.be/tkgbwOeJnuc');
+    }
   }else if (msg.content.charAt(0).toLowerCase() === 'l') {
     if (msg.content === 'L') {
       msg.reply('L');
@@ -117,6 +120,8 @@ client.on('message', msg => {
       msg.channel.send('Well Well Well');
     }else if (msg.content === 'SHUT UP') {
       msg.reply('HOW ABOUT YOU? !warn for being TOXIC!');
+    }else if (msg.content.toLowerCase() === 'shaboom') {
+      msg.channel.send('https://youtu.be/xuDakBpLYmw');
     }else if (msg.content.toLowerCase() === 'shut up') {
       msg.reply('How about you?');
     }
@@ -129,7 +134,7 @@ client.on('message', msg => {
     //Main Commands
     //Version Version Version Version Version Version Version Version Version
       else if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
-        msg.channel.send('Currently on Build **v01.504**!');
+        msg.channel.send('Currently on Build **v01.505**!');
       }
     //Version Version Version Version Version Version Version Version Version
     

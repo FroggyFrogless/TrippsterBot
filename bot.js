@@ -85,7 +85,10 @@ client.on('message', msg => {
     }else if (msg.content.toLowerCase() === 'missing footage') {
       msg.reply('https://youtu.be/bGblNvKRYro');
     }
-  //}else if (msg.content.charAt(0).toLowerCase() === 'n') {
+  }else if (msg.content.charAt(0).toLowerCase() === 'n') {
+    if (msg.content.toLowerCase().includes('nay nay killua') || msg.content.toLowerCase().includes('nay') || msg.content.toLowerCase().includes('n a y')) {
+      msg.delete(0);
+    }
   }else if (msg.content.charAt(0).toLowerCase() === 'o') {
     if (msg.content.toLowerCase() === 'open party' || msg.content.toLowerCase() === 'openparty') {
       msg.channel.send('I agree, <@493182173826777098> do an open party soon!');

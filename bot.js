@@ -86,7 +86,7 @@ client.on('message', msg => {
       msg.reply('https://youtu.be/bGblNvKRYro');
     }
   }else if (msg.content.charAt(0).toLowerCase() === 'n') {
-    if (msg.content.toLowerCase().includes('nay nay killua') || msg.content.toLowerCase().includes('nay') || msg.content.toLowerCase().includes('n a y')) {
+    if (msg.content.toLowerCase().includes('nay nay killua') || msg.content.toLowerCase().includes('nay') || msg.content.toLowerCase().includes('n a y') || msg.content.toLowerCase().includes('nae') || msg.content.toLowerCase().includes('ney')) {
       msg.delete(0);
     }
   }else if (msg.content.charAt(0).toLowerCase() === 'o') {

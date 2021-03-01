@@ -263,7 +263,11 @@ client.on('message', msg => {
     }
   }else if (msg.content.charAt(0).toLowerCase() === 'z') {
     if (msg.content.toLowerCase() === 'zzz') {
-       msg.reply('wake UP!');
+      if (msg.author.id !== '275773134035222531') {
+          msg.reply('wake UP!');;
+        } else {
+          msg.channel.send('Have a Wonderfull sleep!');
+        }
     }
   }
 });

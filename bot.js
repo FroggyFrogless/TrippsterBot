@@ -266,7 +266,7 @@ client.on('message', msg => {
           msg.channel.send('Have a Wonderfull sleep!');
         }
     }
-  }else if (msg.content.toLowerCase().includes('nay nay killua') || msg.content.toLowerCase().includes('nay') || msg.content.toLowerCase().includes('n a y') || msg.content.toLowerCase().includes('nae') || msg.content.toLowerCase().includes('ney')) {
+  }else if (msg.content.toLowerCase().includes('nay nay killua') || msg.content.toLowerCase().includes('nay') || msg.content.toLowerCase().includes('n a y') || msg.content.toLowerCase().includes('nae') || msg.content.toLowerCase().includes('ney') || msg.content.toLowerCase().includes('killua') || msg.content.toLowerCase().includes('n ay') || msg.content.toLowerCase().includes('na y') || msg.content.toLowerCase().includes(':horse:') || msg.content.toLowerCase().includes(':racehorse:')) {
       msg.delete(0);
     }
 });

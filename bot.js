@@ -15,6 +15,8 @@ client.on('message', msg => {
       msg.channel.send('https://youtu.be/nMuoJonJ9ao');
     }else if (msg.content.toLowerCase() === 'brb') {
       msg.reply('Make sure you bring a pizza back!');
+    }else if (msg.content.toLowerCase() === 'bye') {
+      msg.reply('Hope to see you soon!');
     }
   }else if (msg.content.charAt(0).toLowerCase() === 'c') {
     if (msg.content.toLowerCase() === 'corrupt footage') {
@@ -40,7 +42,10 @@ client.on('message', msg => {
     }else if (msg.content.toLowerCase() === 'froggyflopless') {
       msg.channel.send('https://youtu.be/sBduX80xUvU?t=25');
     }
-  //}else if (msg.content.charAt(0).toLowerCase() === 'g') {
+  }else if (msg.content.charAt(0).toLowerCase() === 'g') {
+    if (msg.content.toLowerCase().includes('gj')) {
+      msg.channel.send('Good Job!');
+    }
   }else if (msg.content.charAt(0).toLowerCase() === 'h') {
     if (msg.content.toLowerCase() === 'hay is for horses') {
       msg.reply('But grass is cheaper');
@@ -52,6 +57,8 @@ client.on('message', msg => {
       msg.channel.send('Hey Hey Hey, What’s up Dudes (and Dudetes), it\'s Trippster!');
     }else if (msg.content.toLowerCase() === 'hold up') {
       msg.channel.send('What are we waiting for?');
+    }else if (msg.content.toLowerCase().includes('hey siri')) {
+      msg.reply('You are on Discord chat messaging!');
     }
   }else if (msg.content.charAt(0).toLowerCase() === 'i') {
     if (msg.content.toLowerCase() === 'ik' || msg.content.toLowerCase() === 'i know') {
@@ -84,6 +91,8 @@ client.on('message', msg => {
       msg.channel.send('<@697871765598109746>');
     }else if (msg.content.toLowerCase() === 'missing footage') {
       msg.reply('https://youtu.be/bGblNvKRYro');
+    }else if (msg.content.toLowerCase() === 'merica') {
+      msg.reply('It is spelled America');
     }
   //}else if (msg.content.charAt(0).toLowerCase() === 'n') {
   }else if (msg.content.charAt(0).toLowerCase() === 'o') {
@@ -134,7 +143,7 @@ client.on('message', msg => {
     //Main Commands
     //Version Version Version Version Version Version Version Version Version
       else if (msg.content.toLowerCase() === 'ttversion' || msg.content.toLowerCase() === 'ttversions' || msg.content.toLowerCase() === 'ttbuild' || msg.content.toLowerCase() === 'ttbuilds') {
-        msg.channel.send('Currently on Build **v01.506**!');
+        msg.channel.send('Currently on Build **v01.507**!');
       }
     //Version Version Version Version Version Version Version Version Version
     
@@ -179,6 +188,7 @@ client.on('message', msg => {
             'FunFact #9: Froggy has a total of 18 YouTube channels, 8 of which have at least 1 video on them. However, only 5 of them have more than three videos on them!',
             'FunFact #10: Tripp loves to play Smash Bros, in Smash Ultimate he mains Bowser and Wario. In Melee he mains Puff and Falco!',
             'FunFact #11: Powerade Ultra Citrus Blast is worst drink ever! After Froggy drinking it <https://clips.twitch.tv/CharmingEnchantingBeanBabyRage>.',
+            'FunFact #12: You need 5 kills for an ace.',
         ];
         var funfactsOne = Math.floor(Math.random() * (funfacts.length));
         var funfactsFinal = funfacts[funfactsOne];
